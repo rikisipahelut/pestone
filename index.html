@@ -131,9 +131,9 @@
 <!-- TopNavBar -->
 <nav class="w-full sticky top-0 z-50 bg-surface dark:bg-surface-container border-b border-outline-variant dark:border-outline">
 <div class="flex justify-between items-center max-w-[860px] mx-auto px-page-margin-x py-4">
-<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed flex items-center gap-1">
+<a href="index.html" class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed flex items-center gap-1">
 <span>Pest</span><span class="text-secondary">One</span>
-</div>
+</a>
 <div class="hidden md:flex items-center gap-8">
 <a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary pb-1 font-body-base text-body-base transition-all duration-200" data-i18n="nav.services" href="#services">Layanan</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed font-body-base text-body-base transition-all duration-200" data-i18n="nav.about" href="#about">Tentang</a>
@@ -147,7 +147,7 @@
   aria-label="Open menu" aria-expanded="false">
   <span id="menu-icon" class="material-symbols-outlined">menu</span>
 </button>
-<button class="hidden md:block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="nav.quote">Minta Penawaran</button>
+<a href="https://wa.me/6281934631646?text=Halo%20PestOne%2C%20saya%20ingin%20minta%20penawaran" target="_blank" rel="noopener" class="hidden md:block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="nav.quote">Minta Penawaran</a>
 </div>
 </div>
 </nav>
@@ -159,9 +159,9 @@
     <a href="#quality"  class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all" data-i18n="nav.quality">Keunggulan</a>
     <a href="#contact"  class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all" data-i18n="nav.contact">Kontak</a>
     <div class="pt-3 border-t border-outline-variant mt-2">
-      <button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="nav.quote">
+      <a href="https://wa.me/6281934631646?text=Halo%20PestOne%2C%20saya%20ingin%20minta%20penawaran" target="_blank" rel="noopener" class="w-full block text-center bg-secondary text-on-secondary py-3 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="nav.quote">
         Minta Penawaran
-      </button>
+      </a>
     </div>
   </div>
 </div>
@@ -458,7 +458,7 @@
 </div>
 <div class="flex flex-col gap-1" id="wrap-hp">
 <label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant" data-i18n="form.phone">Nomor HP</label>
-<input id="form-hp" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface" placeholder="0812..." type="tel"/>
+<input id="form-hp" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface" placeholder="0812..." type="tel" inputmode="numeric"/>
 </div>
 </div>
 <div class="flex flex-col gap-1" id="wrap-layanan">
@@ -603,6 +603,11 @@
                 menuIcon.textContent = 'menu';
                 mobileBtn.setAttribute('aria-expanded', 'false');
             });
+        });
+
+        // Nomor HP — hanya angka
+        document.getElementById('form-hp').addEventListener('input', function() {
+            this.value = this.value.replace(/\D/g, '');
         });
 
         // Hero Carousel
