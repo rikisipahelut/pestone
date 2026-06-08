@@ -516,11 +516,18 @@
             const layanan = document.getElementById('form-layanan').value;
             const pesan   = document.getElementById('form-pesan').value.trim();
 
+            const lang = localStorage.getItem('pestone-lang') || 'id';
+            const errMsg = {
+                nama:    lang === 'en' ? 'Name is required'           : 'Nama tidak boleh kosong',
+                hp:      lang === 'en' ? 'Phone number is required'   : 'Nomor HP tidak boleh kosong',
+                layanan: lang === 'en' ? 'Please select a service'    : 'Pilih jenis layanan terlebih dahulu',
+                pesan:   lang === 'en' ? 'Message / address is required' : 'Pesan / alamat tidak boleh kosong',
+            };
             let valid = true;
-            if (!nama)                        { setFieldError('form-nama',    'wrap-nama',    'Nama tidak boleh kosong'); valid = false; }
-            if (!hp)                          { setFieldError('form-hp',      'wrap-hp',      'Nomor HP tidak boleh kosong'); valid = false; }
-            if (!layanan)                     { setFieldError('form-layanan', 'wrap-layanan', 'Pilih jenis layanan terlebih dahulu'); valid = false; }
-            if (!pesan)                       { setFieldError('form-pesan',   'wrap-pesan',   'Pesan / alamat tidak boleh kosong'); valid = false; }
+            if (!nama)    { setFieldError('form-nama',    'wrap-nama',    errMsg.nama);    valid = false; }
+            if (!hp)      { setFieldError('form-hp',      'wrap-hp',      errMsg.hp);      valid = false; }
+            if (!layanan) { setFieldError('form-layanan', 'wrap-layanan', errMsg.layanan); valid = false; }
+            if (!pesan)   { setFieldError('form-pesan',   'wrap-pesan',   errMsg.pesan);   valid = false; }
 
             if (!valid) return;
 
