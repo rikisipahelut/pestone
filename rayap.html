@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pengendalian Rayap - PestOne</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+    darkMode: "class",
+    theme: { extend: { colors: { "surface-container": "#eeeee9","primary-container": "#0f2318","primary": "#000903","secondary": "#006c44","shield-green": "#2e7d52","on-primary-container": "#768c7d","secondary-fixed": "#93f7bf","on-secondary": "#ffffff","on-surface": "#1a1c19","primary-fixed-dim": "#b5ccbb","on-tertiary-container": "#339865","on-error": "#ffffff","surface-dim": "#dadad5","surface": "#fafaf5","outline-variant": "#c2c8c2","outline": "#737873","primary-fixed": "#d0e8d7","on-background": "#1a1c19","on-primary": "#ffffff","on-secondary-container": "#007349","error": "#ba1a1a","deep-green": "#1a3a2a","secondary-container": "#93f7bf","pale-green": "#e8f5ee","mint": "#7ec8a0","on-surface-variant": "#424843","on-primary-fixed-variant": "#374b3e" }, borderRadius: { "DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px" }, spacing: { "stack-gap": "2rem","grid-gutter": "0.75rem","container-max": "860px","section-gap": "3.5rem","page-margin-y": "3rem","page-margin-x": "2rem" }, fontFamily: { "technical-mono": ["DM Mono"],"ui-section": ["DM Sans"],"body-base": ["DM Sans"],"caption-sm": ["DM Sans"],"headline-md": ["DM Sans"],"display-lg": ["DM Sans"],"hero": ["DM Sans"] }, fontSize: { "technical-mono": ["14px", {"lineHeight": "1.4"}],"ui-section": ["11px", {"lineHeight": "1","letterSpacing": "3px"}],"body-base": ["16px", {"lineHeight": "1.7"}],"caption-sm": ["10px", {"lineHeight": "1","letterSpacing": "2px"}],"headline-md": ["32px", {"lineHeight": "1.2"}],"display-lg": ["42px", {"lineHeight": "1.1"}],"hero": ["56px", {"lineHeight": "1","letterSpacing": "-1px"}] } } }
+}
+</script>
+<style>
+body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a1c19; overflow-x: hidden; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.technical-border { border-left: 3px solid #006c44; }
+</style>
+</head>
+<body class="bg-surface">
+
+<!-- Nav -->
+<nav class="w-full sticky top-0 z-50 bg-surface border-b border-outline-variant">
+<div class="flex justify-between items-center max-w-[860px] mx-auto px-page-margin-x py-4">
+  <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-1">
+    <span>Pest</span><span class="text-secondary">One</span>
+  </a>
+  <div class="flex items-center gap-6">
+    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors">Layanan</a>
+    <a href="index.html#contact" class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity">Request Quote</a>
+  </div>
+</div>
+</nav>
+
+<main class="max-w-[860px] mx-auto px-page-margin-x">
+
+  <!-- Breadcrumb -->
+  <div class="flex items-center gap-2 pt-6 text-on-surface-variant font-body-base text-[14px]">
+    <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+    <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    <a href="index.html#services" class="hover:text-secondary transition-colors">Layanan</a>
+    <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+    <span class="text-primary font-bold">Pengendalian Rayap</span>
+  </div>
+
+  <!-- Hero -->
+  <section class="py-section-gap flex flex-col gap-6">
+    <div class="inline-flex items-center px-3 py-1 bg-pale-green text-secondary font-technical-mono text-technical-mono rounded-full w-fit">
+      <span class="material-symbols-outlined text-[14px] mr-2">verified_user</span>PREMIUM SERVICE
+    </div>
+    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight">Pengendalian Rayap <br/><span class="text-secondary">Profesional & Tuntas</span></h1>
+    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]">Rayap adalah ancaman senyap yang dapat menghancurkan struktur bangunan Anda dalam hitungan tahun. PestOne menggunakan teknologi baiting terkini untuk eliminasi koloni secara menyeluruh dan permanen.</p>
+    <div class="flex gap-4 flex-wrap">
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Gratis</a>
+      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all">Lihat Layanan Lain</a>
+    </div>
+    <div class="w-full h-[380px] rounded-xl overflow-hidden shadow-sm">
+      <img src="https://images.unsplash.com/photo-1586779312576-2e3acb9c7f70?w=1200&h=500&fit=crop&q=80" alt="Rayap termite" class="w-full h-full object-cover"/>
+    </div>
+  </section>
+
+  <!-- Bahaya Rayap -->
+  <section class="py-section-gap border-t border-outline-variant">
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Mengapa Berbahaya</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Ancaman Tersembunyi di Balik Dinding Anda</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
+        <span class="material-symbols-outlined text-secondary text-[36px]">domain</span>
+        <h3 class="font-bold text-primary text-[18px]">Kerusakan Struktural</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]">Rayap dapat menggerogoti kayu, rangka atap, dan fondasi bangunan selama bertahun-tahun tanpa terdeteksi hingga kerusakan parah terjadi.</p>
+      </div>
+      <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
+        <span class="material-symbols-outlined text-secondary text-[36px]">attach_money</span>
+        <h3 class="font-bold text-primary text-[18px]">Biaya Perbaikan Mahal</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]">Perbaikan kerusakan akibat rayap bisa mencapai puluhan hingga ratusan juta rupiah. Pencegahan jauh lebih hemat daripada perbaikan.</p>
+      </div>
+      <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
+        <span class="material-symbols-outlined text-secondary text-[36px]">groups</span>
+        <h3 class="font-bold text-primary text-[18px]">Koloni Cepat Berkembang</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]">Satu koloni rayap bisa terdiri dari jutaan individu. Tanpa penanganan profesional, populasi terus berkembang dan menyebar ke area baru.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proses Layanan -->
+  <section class="py-section-gap border-t border-outline-variant">
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Proses Kami</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">4 Tahap Eliminasi Rayap Tuntas</h2>
+    <div class="flex flex-col gap-6">
+      <div class="flex gap-6 items-start">
+        <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">1</div>
+        <div class="technical-border pl-4">
+          <h4 class="font-bold text-primary text-[18px] mb-1">Inspeksi Menyeluruh</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]">Teknisi kami melakukan pemeriksaan visual dan penggunaan alat deteksi termal untuk mengidentifikasi titik infestasi rayap di seluruh area bangunan.</p>
+        </div>
+      </div>
+      <div class="flex gap-6 items-start">
+        <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">2</div>
+        <div class="technical-border pl-4">
+          <h4 class="font-bold text-primary text-[18px] mb-1">Identifikasi Spesies & Koloni</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]">Kami mengidentifikasi jenis rayap (subterranean, drywood, atau dampwood) untuk menentukan metode penanganan yang paling efektif.</p>
+        </div>
+      </div>
+      <div class="flex gap-6 items-start">
+        <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">3</div>
+        <div class="technical-border pl-4">
+          <h4 class="font-bold text-primary text-[18px] mb-1">Aplikasi Baiting & Treatment</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]">Pemasangan stasiun umpan (baiting station) di jalur aktivitas rayap, dikombinasikan dengan soil treatment atau wood treatment sesuai kebutuhan.</p>
+        </div>
+      </div>
+      <div class="flex gap-6 items-start">
+        <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">4</div>
+        <div class="technical-border pl-4">
+          <h4 class="font-bold text-primary text-[18px] mb-1">Monitoring & Garansi</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]">Pemantauan berkala setiap 3 bulan untuk memastikan koloni telah tereliminasi sepenuhnya. Dilengkapi garansi layanan hingga 12 bulan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-section-gap border-t border-outline-variant">
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">FAQ</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Pertanyaan Umum</h2>
+    <div class="flex flex-col gap-4">
+      <div class="bg-white border border-outline-variant rounded-xl p-6">
+        <h4 class="font-bold text-primary mb-2">Berapa lama proses pengendalian rayap?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]">Aplikasi awal memakan waktu 2–4 jam tergantung luas area. Proses eliminasi koloni secara penuh biasanya berlangsung 1–3 bulan setelah pemasangan bait station.</p>
+      </div>
+      <div class="bg-white border border-outline-variant rounded-xl p-6">
+        <h4 class="font-bold text-primary mb-2">Apakah bahan kimia yang digunakan aman?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]">Ya. Semua produk yang kami gunakan telah terdaftar di Kementerian Pertanian RI dan aman bagi manusia, hewan peliharaan, serta lingkungan bila diaplikasikan sesuai prosedur.</p>
+      </div>
+      <div class="bg-white border border-outline-variant rounded-xl p-6">
+        <h4 class="font-bold text-primary mb-2">Apakah ada garansi layanan?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]">Ya, kami memberikan garansi layanan hingga 12 bulan. Jika rayap kembali dalam periode garansi, kami akan melakukan retreatment tanpa biaya tambahan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-section-gap">
+    <div class="bg-primary-container rounded-2xl p-8 md:p-12 text-center flex flex-col items-center gap-6">
+      <h2 class="font-headline-md text-headline-md text-white font-bold">Siap Lindungi Rumah Anda dari Rayap?</h2>
+      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]">Hubungi tim PestOne sekarang untuk inspeksi gratis dan penawaran terbaik. Teknisi kami siap membantu 24/7.</p>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Sekarang</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full bg-primary-container">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[860px] mx-auto px-page-margin-x py-section-gap border-t border-on-primary-container/20">
+  <div class="flex flex-col gap-4 items-center md:items-start mb-8 md:mb-0">
+    <div class="font-ui-section text-ui-section uppercase tracking-widest text-mint mb-2">PestOne</div>
+    <p class="font-caption-sm text-caption-sm text-on-primary-container/80 max-w-[300px] text-center md:text-left">© 2024 PestOne Pest Management. All rights reserved.</p>
+  </div>
+  <div class="grid grid-cols-2 gap-x-12 gap-y-4">
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Privacy Policy</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Terms of Service</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#services">Layanan</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#contact">Kontak</a>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
