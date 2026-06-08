@@ -26,9 +26,10 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-1">
     <span>Pest</span><span class="text-secondary">One</span>
   </a>
-  <div class="flex items-center gap-6">
-    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors">Layanan</a>
-    <a href="index.html#contact" class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity">Request Quote</a>
+  <div class="flex items-center gap-3">
+    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors" data-i18n="d.nav.services">Layanan</a>
+    <button onclick="toggleLang()" class="lang-btn border border-outline rounded px-2 py-1 text-[12px] font-technical-mono font-bold text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors">EN</button>
+    <a href="index.html#contact" class="hidden md:inline-block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="d.nav.quote">Minta Penawaran</a>
   </div>
 </div>
 </nav>
@@ -36,22 +37,22 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
 <main class="max-w-[860px] mx-auto px-page-margin-x">
 
   <div class="flex items-center gap-2 pt-6 text-on-surface-variant font-body-base text-[14px]">
-    <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+    <a href="index.html" class="hover:text-secondary transition-colors" data-i18n="bc.home">Beranda</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <a href="index.html#services" class="hover:text-secondary transition-colors">Layanan</a>
+    <a href="index.html#services" class="hover:text-secondary transition-colors" data-i18n="bc.services">Layanan</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <span class="text-primary font-bold">General Pest Control</span>
+    <span class="text-primary font-bold" data-i18n="page.title">General Pest Control</span>
   </div>
 
   <section class="py-section-gap flex flex-col gap-6">
     <div class="inline-flex items-center px-3 py-1 bg-pale-green text-secondary font-technical-mono text-technical-mono rounded-full w-fit">
       <span class="material-symbols-outlined text-[14px] mr-2">pest_control</span>GENERAL PEST CONTROL
     </div>
-    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight">General Pest Control <br/><span class="text-secondary">Satu Solusi, Segala Hama</span></h1>
-    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]">Layanan komprehensif untuk mengatasi berbagai jenis serangga merayap dan terbang sekaligus. Cocok untuk hunian, perkantoran, dan fasilitas komersial yang membutuhkan perlindungan menyeluruh.</p>
+    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight" data-i18n="page.h1">General Pest Control <br/><span class="text-secondary">Satu Solusi, Segala Hama</span></h1>
+    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]" data-i18n="page.desc">Layanan komprehensif untuk mengatasi berbagai jenis serangga merayap dan terbang sekaligus. Cocok untuk hunian, perkantoran, dan fasilitas komersial yang membutuhkan perlindungan menyeluruh.</p>
     <div class="flex gap-4 flex-wrap">
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Gratis</a>
-      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all">Lihat Layanan Lain</a>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult">Konsultasi Gratis</a>
+      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all" data-i18n="d.other">Lihat Layanan Lain</a>
     </div>
     <div class="w-full h-[380px] rounded-xl overflow-hidden shadow-sm">
       <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB5xlXXZATWbK_m3cgv0GP25Z0t9SNryzDgrYEqdCI1jbfgheW0ADZomHUW8s-reT4kX6bPIf7xv6RuULXF-3EgQASMD0ivujgmUqqA34feX-OhLFgN7Y_GmGzMFIN0sq8cyPU0B-TlGdnPU2Llc58TYR-AQoG7YYN0ASvxySNfDBCnmWXxnx041_n5knL1g3WGCG7oDVwOMppXBIIwZepNfZH3o5E4XcLPcjFt4AvNkUXur_plkJ3ReOkSh4jYF2p0QDOaDAty7Ji" alt="General pest control profesional" class="w-full h-full object-cover"/>
@@ -59,87 +60,87 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Hama yang Kami Tangani</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Perlindungan Menyeluruh dari Berbagai Hama</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="page.why.label">Hama yang Kami Tangani</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.why.title">Perlindungan Menyeluruh dari Berbagai Hama</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       <div class="bg-white border border-outline-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center">
         <span class="material-symbols-outlined text-secondary text-[32px]">bug_report</span>
-        <p class="font-bold text-primary text-[14px]">Semut</p>
+        <p class="font-bold text-primary text-[14px]" data-i18n="pest1.name">Semut</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center">
         <span class="material-symbols-outlined text-secondary text-[32px]">pest_control</span>
-        <p class="font-bold text-primary text-[14px]">Kecoak</p>
+        <p class="font-bold text-primary text-[14px]" data-i18n="pest2.name">Kecoak</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center">
         <span class="material-symbols-outlined text-secondary text-[32px]">air</span>
-        <p class="font-bold text-primary text-[14px]">Nyamuk</p>
+        <p class="font-bold text-primary text-[14px]" data-i18n="pest3.name">Nyamuk</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-4 flex flex-col items-center gap-2 text-center">
         <span class="material-symbols-outlined text-secondary text-[32px]">visibility</span>
-        <p class="font-bold text-primary text-[14px]">Lalat</p>
+        <p class="font-bold text-primary text-[14px]" data-i18n="pest4.name">Lalat</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Proses Kami</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">4 Tahap Pengendalian Hama Komprehensif</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.process">Proses Kami</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.process.title">4 Tahap Pengendalian Hama Komprehensif</h2>
     <div class="flex flex-col gap-6">
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">1</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Survey & Identifikasi</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Pemeriksaan menyeluruh seluruh area untuk mengidentifikasi jenis hama, titik infestasi, dan tingkat keparahan masalah sebelum menentukan metode treatment.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc1.title">Survey & Identifikasi</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc1.desc">Pemeriksaan menyeluruh seluruh area untuk mengidentifikasi jenis hama, titik infestasi, dan tingkat keparahan masalah sebelum menentukan metode treatment.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">2</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Residual Spraying</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Aplikasi insektisida residual di permukaan lantai, dinding, sudut, dan celah-celah yang menjadi jalur aktif hama. Efektif hingga 3 bulan setelah aplikasi.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc2.title">Residual Spraying</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc2.desc">Aplikasi insektisida residual di permukaan lantai, dinding, sudut, dan celah-celah yang menjadi jalur aktif hama. Efektif hingga 3 bulan setelah aplikasi.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">3</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Fogging / ULV Treatment</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Fogging ultra-low volume untuk area luas guna menyasar serangga terbang di udara. Teknologi ini memastikan distribusi insektisida yang merata dan efisien.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc3.title">Fogging / ULV Treatment</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc3.desc">Fogging ultra-low volume untuk area luas guna menyasar serangga terbang di udara. Teknologi ini memastikan distribusi insektisida yang merata dan efisien.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">4</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Monitoring & Re-treatment</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Evaluasi pascatreatment dan jadwal pemeliharaan rutin (bulanan/triwulanan) untuk menjaga area bebas hama sepanjang tahun.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc4.title">Monitoring & Re-treatment</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc4.desc">Evaluasi pascatreatment dan jadwal pemeliharaan rutin (bulanan/triwulanan) untuk menjaga area bebas hama sepanjang tahun.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">FAQ</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Pertanyaan Umum</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.faq">FAQ</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="d.faq.title">Pertanyaan Umum</h2>
     <div class="flex flex-col gap-4">
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Berapa lama efek treatment bertahan?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Residual spraying efektif selama 1–3 bulan. Kami merekomendasikan paket maintenance triwulanan untuk perlindungan optimal sepanjang tahun.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq1.q">Berapa lama efek treatment bertahan?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq1.a">Residual spraying efektif selama 1–3 bulan. Kami merekomendasikan paket maintenance triwulanan untuk perlindungan optimal sepanjang tahun.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Apakah perlu mengosongkan rumah saat fogging?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Ya, untuk fogging area dalam ruangan, penghuni perlu keluar selama 1–2 jam dan ventilasi ruangan sebelum kembali masuk. Teknisi kami akan memberikan instruksi lengkap.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq2.q">Apakah perlu mengosongkan rumah saat fogging?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq2.a">Ya, untuk fogging area dalam ruangan, penghuni perlu keluar selama 1–2 jam dan ventilasi ruangan sebelum kembali masuk. Teknisi kami akan memberikan instruksi lengkap.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Apakah cocok untuk bisnis F&B dan hotel?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Ya. Kami memiliki protokol khusus untuk industri makanan dan hospitality yang memenuhi standar HACCP dan regulasi kesehatan setempat.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq3.q">Apakah cocok untuk bisnis F&B dan hotel?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq3.a">Ya. Kami memiliki protokol khusus untuk industri makanan dan hospitality yang memenuhi standar HACCP dan regulasi kesehatan setempat.</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap">
     <div class="bg-primary-container rounded-2xl p-8 md:p-12 text-center flex flex-col items-center gap-6">
-      <h2 class="font-headline-md text-headline-md text-white font-bold">Satu Paket, Semua Hama Teratasi</h2>
-      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]">Dapatkan paket general pest control terbaik untuk hunian atau bisnis Anda. Hubungi kami sekarang.</p>
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Sekarang</a>
+      <h2 class="font-headline-md text-headline-md text-white font-bold" data-i18n="page.cta.title">Satu Paket, Semua Hama Teratasi</h2>
+      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]" data-i18n="page.cta.desc">Dapatkan paket general pest control terbaik untuk hunian atau bisnis Anda. Hubungi kami sekarang.</p>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult.now">Konsultasi Sekarang</a>
     </div>
   </section>
 
@@ -152,13 +153,73 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
     <p class="font-caption-sm text-caption-sm text-on-primary-container/80 max-w-[300px] text-center md:text-left">© 2024 PestOne Pest Management. All rights reserved.</p>
   </div>
   <div class="grid grid-cols-2 gap-x-12 gap-y-4">
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Privacy Policy</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Terms of Service</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#services">Layanan</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#contact">Kontak</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.privacy" href="#">Privacy Policy</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.terms" href="#">Terms of Service</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.services" href="index.html#services">Layanan</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.contact" href="index.html#contact">Kontak</a>
   </div>
 </div>
 </footer>
-
+<script>
+const pageTranslations = {
+  id: {
+    'page.title': 'General Pest Control',
+    'page.h1': 'General Pest Control <br/><span class="text-secondary">Satu Solusi, Segala Hama</span>',
+    'page.desc': 'Layanan komprehensif untuk mengatasi berbagai jenis serangga merayap dan terbang sekaligus. Cocok untuk hunian, perkantoran, dan fasilitas komersial yang membutuhkan perlindungan menyeluruh.',
+    'page.why.label': 'Hama yang Kami Tangani',
+    'page.why.title': 'Perlindungan Menyeluruh dari Berbagai Hama',
+    'pest1.name': 'Semut',
+    'pest2.name': 'Kecoak',
+    'pest3.name': 'Nyamuk',
+    'pest4.name': 'Lalat',
+    'page.process.title': '4 Tahap Pengendalian Hama Komprehensif',
+    'proc1.title': 'Survey & Identifikasi',
+    'proc1.desc': 'Pemeriksaan menyeluruh seluruh area untuk mengidentifikasi jenis hama, titik infestasi, dan tingkat keparahan masalah sebelum menentukan metode treatment.',
+    'proc2.title': 'Residual Spraying',
+    'proc2.desc': 'Aplikasi insektisida residual di permukaan lantai, dinding, sudut, dan celah-celah yang menjadi jalur aktif hama. Efektif hingga 3 bulan setelah aplikasi.',
+    'proc3.title': 'Fogging / ULV Treatment',
+    'proc3.desc': 'Fogging ultra-low volume untuk area luas guna menyasar serangga terbang di udara. Teknologi ini memastikan distribusi insektisida yang merata dan efisien.',
+    'proc4.title': 'Monitoring & Re-treatment',
+    'proc4.desc': 'Evaluasi pascatreatment dan jadwal pemeliharaan rutin (bulanan/triwulanan) untuk menjaga area bebas hama sepanjang tahun.',
+    'faq1.q': 'Berapa lama efek treatment bertahan?',
+    'faq1.a': 'Residual spraying efektif selama 1–3 bulan. Kami merekomendasikan paket maintenance triwulanan untuk perlindungan optimal sepanjang tahun.',
+    'faq2.q': 'Apakah perlu mengosongkan rumah saat fogging?',
+    'faq2.a': 'Ya, untuk fogging area dalam ruangan, penghuni perlu keluar selama 1–2 jam dan ventilasi ruangan sebelum kembali masuk. Teknisi kami akan memberikan instruksi lengkap.',
+    'faq3.q': 'Apakah cocok untuk bisnis F&B dan hotel?',
+    'faq3.a': 'Ya. Kami memiliki protokol khusus untuk industri makanan dan hospitality yang memenuhi standar HACCP dan regulasi kesehatan setempat.',
+    'page.cta.title': 'Satu Paket, Semua Hama Teratasi',
+    'page.cta.desc': 'Dapatkan paket general pest control terbaik untuk hunian atau bisnis Anda. Hubungi kami sekarang.',
+  },
+  en: {
+    'page.title': 'General Pest Control',
+    'page.h1': 'General Pest Control <br/><span class="text-secondary">One Solution, All Pests</span>',
+    'page.desc': 'Comprehensive service to tackle multiple types of crawling and flying insects at once. Ideal for residences, offices, and commercial facilities needing complete protection.',
+    'page.why.label': 'Pests We Handle',
+    'page.why.title': 'Comprehensive Protection from All Pests',
+    'pest1.name': 'Ants',
+    'pest2.name': 'Cockroaches',
+    'pest3.name': 'Mosquitoes',
+    'pest4.name': 'Flies',
+    'page.process.title': '4 Steps to Comprehensive Pest Control',
+    'proc1.title': 'Survey & Identification',
+    'proc1.desc': 'Thorough inspection of the entire area to identify pest types, infestation points, and severity before determining treatment methods.',
+    'proc2.title': 'Residual Spraying',
+    'proc2.desc': 'Application of residual insecticide on floor surfaces, walls, corners, and cracks that serve as active pest pathways. Effective for up to 3 months after application.',
+    'proc3.title': 'Fogging / ULV Treatment',
+    'proc3.desc': 'Ultra-low volume fogging for large areas to target flying insects in the air. This technology ensures even and efficient distribution of insecticide.',
+    'proc4.title': 'Monitoring & Re-treatment',
+    'proc4.desc': 'Post-treatment evaluation and regular maintenance schedule (monthly/quarterly) to keep the area pest-free throughout the year.',
+    'faq1.q': 'How long does the treatment effect last?',
+    'faq1.a': 'Residual spraying is effective for 1–3 months. We recommend a quarterly maintenance package for optimal year-round protection.',
+    'faq2.q': 'Do I need to vacate the house during fogging?',
+    'faq2.a': 'Yes, for indoor fogging, occupants need to leave for 1–2 hours and ventilate the room before re-entering. Our technicians will provide complete instructions.',
+    'faq3.q': 'Is it suitable for F&B businesses and hotels?',
+    'faq3.a': 'Yes. We have special protocols for the food and hospitality industry that meet HACCP standards and local health regulations.',
+    'page.cta.title': 'One Package, All Pests Handled',
+    'page.cta.desc': 'Get the best general pest control package for your home or business. Contact us now.',
+  }
+};
+</script>
+<script src="i18n.js"></script>
 </body>
 </html>

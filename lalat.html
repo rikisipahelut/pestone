@@ -26,9 +26,10 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-1">
     <span>Pest</span><span class="text-secondary">One</span>
   </a>
-  <div class="flex items-center gap-6">
-    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors">Layanan</a>
-    <a href="index.html#contact" class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity">Request Quote</a>
+  <div class="flex items-center gap-3">
+    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors" data-i18n="d.nav.services">Layanan</a>
+    <button onclick="toggleLang()" class="lang-btn border border-outline rounded px-2 py-1 text-[12px] font-technical-mono font-bold text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors">EN</button>
+    <a href="index.html#contact" class="hidden md:inline-block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="d.nav.quote">Minta Penawaran</a>
   </div>
 </div>
 </nav>
@@ -36,22 +37,22 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
 <main class="max-w-[860px] mx-auto px-page-margin-x">
 
   <div class="flex items-center gap-2 pt-6 text-on-surface-variant font-body-base text-[14px]">
-    <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+    <a href="index.html" class="hover:text-secondary transition-colors" data-i18n="bc.home">Beranda</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <a href="index.html#services" class="hover:text-secondary transition-colors">Layanan</a>
+    <a href="index.html#services" class="hover:text-secondary transition-colors" data-i18n="bc.services">Layanan</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <span class="text-primary font-bold">Pengendalian Lalat</span>
+    <span class="text-primary font-bold" data-i18n="page.title">Pengendalian Lalat</span>
   </div>
 
   <section class="py-section-gap flex flex-col gap-6">
     <div class="inline-flex items-center px-3 py-1 bg-pale-green text-secondary font-technical-mono text-technical-mono rounded-full w-fit">
       <span class="material-symbols-outlined text-[14px] mr-2">pest_control</span>FLY CONTROL
     </div>
-    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight">Pengendalian Lalat <br/><span class="text-secondary">Higienitas Terjamin</span></h1>
-    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]">Lalat adalah pembawa lebih dari 100 jenis patogen berbahaya yang dapat mengkontaminasi makanan dan permukaan dalam hitungan detik. PestOne menyediakan solusi pengendalian lalat terpadu yang efektif untuk hunian, restoran, dan fasilitas produksi makanan.</p>
+    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight" data-i18n="page.h1">Pengendalian Lalat <br/><span class="text-secondary">Higienitas Terjamin</span></h1>
+    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]" data-i18n="page.desc">Lalat adalah pembawa lebih dari 100 jenis patogen berbahaya yang dapat mengkontaminasi makanan dan permukaan dalam hitungan detik. PestOne menyediakan solusi pengendalian lalat terpadu yang efektif untuk hunian, restoran, dan fasilitas produksi makanan.</p>
     <div class="flex gap-4 flex-wrap">
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Gratis</a>
-      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all">Lihat Layanan Lain</a>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult">Konsultasi Gratis</a>
+      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all" data-i18n="d.other">Lihat Layanan Lain</a>
     </div>
     <div class="w-full h-[380px] rounded-xl overflow-hidden shadow-sm">
       <img src="https://images.unsplash.com/photo-1512967709413-3800e20783fd?w=1200&h=500&fit=crop&q=80" alt="Lalat makro" class="w-full h-full object-cover"/>
@@ -59,86 +60,86 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Mengapa Berbahaya</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Risiko Kesehatan dari Lalat</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.why">Mengapa Berbahaya</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.why.title">Risiko Kesehatan dari Lalat</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">sick</span>
-        <h3 class="font-bold text-primary text-[18px]">Penyebaran Penyakit</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Lalat membawa bakteri tifus, disentri, kolera, dan diare di tubuh dan kakinya. Setiap kali ia mendarat di makanan Anda, ribuan bakteri ikut berpindah.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why1.title">Penyebaran Penyakit</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why1.desc">Lalat membawa bakteri tifus, disentri, kolera, dan diare di tubuh dan kakinya. Setiap kali ia mendarat di makanan Anda, ribuan bakteri ikut berpindah.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">restaurant</span>
-        <h3 class="font-bold text-primary text-[18px]">Risiko Bisnis F&B</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Kehadiran lalat di restoran atau dapur komersial dapat menyebabkan penutupan paksa oleh dinas kesehatan dan kerusakan reputasi bisnis yang permanen.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why2.title">Risiko Bisnis F&B</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why2.desc">Kehadiran lalat di restoran atau dapur komersial dapat menyebabkan penutupan paksa oleh dinas kesehatan dan kerusakan reputasi bisnis yang permanen.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">child_care</span>
-        <h3 class="font-bold text-primary text-[18px]">Rentan pada Anak</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Anak-anak sangat rentan terhadap penyakit yang dibawa lalat karena sistem imun yang belum sempurna. Diare akut pada bayi bisa berakibat fatal.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why3.title">Rentan pada Anak</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why3.desc">Anak-anak sangat rentan terhadap penyakit yang dibawa lalat karena sistem imun yang belum sempurna. Diare akut pada bayi bisa berakibat fatal.</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Proses Kami</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">4 Tahap Pengendalian Lalat Terpadu</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.process">Proses Kami</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.process.title">4 Tahap Pengendalian Lalat Terpadu</h2>
     <div class="flex flex-col gap-6">
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">1</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Identifikasi Sumber</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Menemukan sumber atraktan (sampah, kotoran hewan, bahan organik membusuk) dan titik masuk lalat ke dalam bangunan untuk rencana pengendalian yang tepat sasaran.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc1.title">Identifikasi Sumber</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc1.desc">Menemukan sumber atraktan (sampah, kotoran hewan, bahan organik membusuk) dan titik masuk lalat ke dalam bangunan untuk rencana pengendalian yang tepat sasaran.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">2</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Perbaikan Sanitasi</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Rekomendasi dan implementasi perbaikan sanitasi: manajemen sampah, penutupan saluran air, dan eliminasi sumber organik yang menarik lalat.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc2.title">Perbaikan Sanitasi</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc2.desc">Rekomendasi dan implementasi perbaikan sanitasi: manajemen sampah, penutupan saluran air, dan eliminasi sumber organik yang menarik lalat.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">3</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Pemasangan Electric Fly Trap</h4>
-          <p class="text-on-surface-vertical font-body-base text-[14px]">Instalasi lampu perangkap lalat (UV electric fly trap) di posisi strategis sesuai standar industri makanan, efektif menangkap lalat 24 jam tanpa kimia.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc3.title">Pemasangan Electric Fly Trap</h4>
+          <p class="text-on-surface-vertical font-body-base text-[14px]" data-i18n="proc3.desc">Instalasi lampu perangkap lalat (UV electric fly trap) di posisi strategis sesuai standar industri makanan, efektif menangkap lalat 24 jam tanpa kimia.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">4</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Aplikasi Insektisida Terarah</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Residual spray di permukaan istirahat lalat (langit-langit, dinding) dan aplikasi fly bait granul di area luar untuk menekan populasi secara signifikan.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc4.title">Aplikasi Insektisida Terarah</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc4.desc">Residual spray di permukaan istirahat lalat (langit-langit, dinding) dan aplikasi fly bait granul di area luar untuk menekan populasi secara signifikan.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">FAQ</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Pertanyaan Umum</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.faq">FAQ</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="d.faq.title">Pertanyaan Umum</h2>
     <div class="flex flex-col gap-4">
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Apakah electric fly trap aman digunakan di area dapur restoran?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Ya. Electric fly trap yang kami sediakan memenuhi standar NSF/ANSI untuk food service. Tipe sticky board (tanpa sengatan) direkomendasikan untuk area persiapan makanan agar tidak ada kontaminasi lalat mati.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq1.q">Apakah electric fly trap aman digunakan di area dapur restoran?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq1.a">Ya. Electric fly trap yang kami sediakan memenuhi standar NSF/ANSI untuk food service. Tipe sticky board (tanpa sengatan) direkomendasikan untuk area persiapan makanan agar tidak ada kontaminasi lalat mati.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Berapa lama hasil pengendalian lalat terlihat?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Penurunan populasi lalat terlihat dalam 24–48 jam setelah treatment. Dengan kombinasi sanitasi baik dan treatment kimia, lingkungan bebas lalat dapat dicapai dalam 1–2 minggu.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq2.q">Berapa lama hasil pengendalian lalat terlihat?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq2.a">Penurunan populasi lalat terlihat dalam 24–48 jam setelah treatment. Dengan kombinasi sanitasi baik dan treatment kimia, lingkungan bebas lalat dapat dicapai dalam 1–2 minggu.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Seberapa sering perlu dilakukan treatment lalat?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Untuk area komersial, kami merekomendasikan monitoring bulanan dan treatment rutin setiap 1–2 bulan. Frekuensi bisa ditingkatkan di musim kemarau saat populasi lalat meningkat.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq3.q">Seberapa sering perlu dilakukan treatment lalat?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq3.a">Untuk area komersial, kami merekomendasikan monitoring bulanan dan treatment rutin setiap 1–2 bulan. Frekuensi bisa ditingkatkan di musim kemarau saat populasi lalat meningkat.</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap">
     <div class="bg-primary-container rounded-2xl p-8 md:p-12 text-center flex flex-col items-center gap-6">
-      <h2 class="font-headline-md text-headline-md text-white font-bold">Dapur Bersih, Bisnis Terpercaya</h2>
-      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]">Jaga standar higienitas tertinggi di area dapur dan fasilitas Anda. Hubungi PestOne untuk solusi pengendalian lalat profesional.</p>
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Sekarang</a>
+      <h2 class="font-headline-md text-headline-md text-white font-bold" data-i18n="page.cta.title">Dapur Bersih, Bisnis Terpercaya</h2>
+      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]" data-i18n="page.cta.desc">Jaga standar higienitas tertinggi di area dapur dan fasilitas Anda. Hubungi PestOne untuk solusi pengendalian lalat profesional.</p>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult.now">Konsultasi Sekarang</a>
     </div>
   </section>
 
@@ -151,13 +152,75 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
     <p class="font-caption-sm text-caption-sm text-on-primary-container/80 max-w-[300px] text-center md:text-left">© 2024 PestOne Pest Management. All rights reserved.</p>
   </div>
   <div class="grid grid-cols-2 gap-x-12 gap-y-4">
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Privacy Policy</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Terms of Service</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#services">Layanan</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#contact">Kontak</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.privacy" href="#">Privacy Policy</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.terms" href="#">Terms of Service</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.services" href="index.html#services">Layanan</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.contact" href="index.html#contact">Kontak</a>
   </div>
 </div>
 </footer>
-
+<script>
+const pageTranslations = {
+  id: {
+    'page.title': 'Pengendalian Lalat',
+    'page.h1': 'Pengendalian Lalat <br/><span class="text-secondary">Higienitas Terjamin</span>',
+    'page.desc': 'Lalat adalah pembawa lebih dari 100 jenis patogen berbahaya yang dapat mengkontaminasi makanan dan permukaan dalam hitungan detik. PestOne menyediakan solusi pengendalian lalat terpadu yang efektif untuk hunian, restoran, dan fasilitas produksi makanan.',
+    'page.why.title': 'Risiko Kesehatan dari Lalat',
+    'why1.title': 'Penyebaran Penyakit',
+    'why1.desc': 'Lalat membawa bakteri tifus, disentri, kolera, dan diare di tubuh dan kakinya. Setiap kali ia mendarat di makanan Anda, ribuan bakteri ikut berpindah.',
+    'why2.title': 'Risiko Bisnis F&B',
+    'why2.desc': 'Kehadiran lalat di restoran atau dapur komersial dapat menyebabkan penutupan paksa oleh dinas kesehatan dan kerusakan reputasi bisnis yang permanen.',
+    'why3.title': 'Rentan pada Anak',
+    'why3.desc': 'Anak-anak sangat rentan terhadap penyakit yang dibawa lalat karena sistem imun yang belum sempurna. Diare akut pada bayi bisa berakibat fatal.',
+    'page.process.title': '4 Tahap Pengendalian Lalat Terpadu',
+    'proc1.title': 'Identifikasi Sumber',
+    'proc1.desc': 'Menemukan sumber atraktan (sampah, kotoran hewan, bahan organik membusuk) dan titik masuk lalat ke dalam bangunan untuk rencana pengendalian yang tepat sasaran.',
+    'proc2.title': 'Perbaikan Sanitasi',
+    'proc2.desc': 'Rekomendasi dan implementasi perbaikan sanitasi: manajemen sampah, penutupan saluran air, dan eliminasi sumber organik yang menarik lalat.',
+    'proc3.title': 'Pemasangan Electric Fly Trap',
+    'proc3.desc': 'Instalasi lampu perangkap lalat (UV electric fly trap) di posisi strategis sesuai standar industri makanan, efektif menangkap lalat 24 jam tanpa kimia.',
+    'proc4.title': 'Aplikasi Insektisida Terarah',
+    'proc4.desc': 'Residual spray di permukaan istirahat lalat (langit-langit, dinding) dan aplikasi fly bait granul di area luar untuk menekan populasi secara signifikan.',
+    'faq1.q': 'Apakah electric fly trap aman digunakan di area dapur restoran?',
+    'faq1.a': 'Ya. Electric fly trap yang kami sediakan memenuhi standar NSF/ANSI untuk food service. Tipe sticky board (tanpa sengatan) direkomendasikan untuk area persiapan makanan agar tidak ada kontaminasi lalat mati.',
+    'faq2.q': 'Berapa lama hasil pengendalian lalat terlihat?',
+    'faq2.a': 'Penurunan populasi lalat terlihat dalam 24–48 jam setelah treatment. Dengan kombinasi sanitasi baik dan treatment kimia, lingkungan bebas lalat dapat dicapai dalam 1–2 minggu.',
+    'faq3.q': 'Seberapa sering perlu dilakukan treatment lalat?',
+    'faq3.a': 'Untuk area komersial, kami merekomendasikan monitoring bulanan dan treatment rutin setiap 1–2 bulan. Frekuensi bisa ditingkatkan di musim kemarau saat populasi lalat meningkat.',
+    'page.cta.title': 'Dapur Bersih, Bisnis Terpercaya',
+    'page.cta.desc': 'Jaga standar higienitas tertinggi di area dapur dan fasilitas Anda. Hubungi PestOne untuk solusi pengendalian lalat profesional.',
+  },
+  en: {
+    'page.title': 'Fly Control',
+    'page.h1': 'Fly Control <br/><span class="text-secondary">Hygiene Guaranteed</span>',
+    'page.desc': 'Flies carry more than 100 types of dangerous pathogens that can contaminate food and surfaces in seconds. PestOne provides effective integrated fly control solutions for residences, restaurants, and food production facilities.',
+    'page.why.title': 'Health Risks from Flies',
+    'why1.title': 'Disease Transmission',
+    'why1.desc': 'Flies carry typhoid, dysentery, cholera, and diarrhea bacteria on their bodies and legs. Every time they land on your food, thousands of bacteria transfer with them.',
+    'why2.title': 'F&B Business Risk',
+    'why2.desc': 'The presence of flies in a restaurant or commercial kitchen can lead to forced closure by the health department and permanent damage to business reputation.',
+    'why3.title': 'Vulnerable Children',
+    'why3.desc': 'Children are highly vulnerable to fly-borne diseases due to their underdeveloped immune systems. Acute diarrhea in infants can be fatal.',
+    'page.process.title': '4 Steps to Integrated Fly Control',
+    'proc1.title': 'Source Identification',
+    'proc1.desc': 'Finding attractant sources (garbage, animal waste, decomposing organic matter) and fly entry points into the building for a targeted control plan.',
+    'proc2.title': 'Sanitation Improvement',
+    'proc2.desc': 'Recommendations and implementation of sanitation improvements: waste management, drain sealing, and elimination of organic sources that attract flies.',
+    'proc3.title': 'Electric Fly Trap Installation',
+    'proc3.desc': 'Installation of UV electric fly traps in strategic positions according to food industry standards, effectively catching flies 24 hours without chemicals.',
+    'proc4.title': 'Targeted Insecticide Application',
+    'proc4.desc': 'Residual spray on fly resting surfaces (ceilings, walls) and fly bait granule application in outdoor areas to significantly suppress the population.',
+    'faq1.q': 'Is the electric fly trap safe for restaurant kitchen areas?',
+    'faq1.a': 'Yes. Our electric fly traps meet NSF/ANSI standards for food service. The sticky board type (no electrocution) is recommended for food preparation areas to avoid dead fly contamination.',
+    'faq2.q': 'How long until fly control results are visible?',
+    'faq2.a': 'A drop in fly population is visible within 24–48 hours after treatment. With good sanitation combined with chemical treatment, a fly-free environment can be achieved in 1–2 weeks.',
+    'faq3.q': 'How often should fly treatment be done?',
+    'faq3.a': 'For commercial areas, we recommend monthly monitoring and routine treatment every 1–2 months. Frequency can be increased in the dry season when fly populations increase.',
+    'page.cta.title': 'Clean Kitchen, Trusted Business',
+    'page.cta.desc': 'Maintain the highest hygiene standards in your kitchen and facility. Contact PestOne for professional fly control solutions.',
+  }
+};
+</script>
+<script src="i18n.js"></script>
 </body>
 </html>

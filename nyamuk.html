@@ -26,9 +26,10 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-1">
     <span>Pest</span><span class="text-secondary">One</span>
   </a>
-  <div class="flex items-center gap-6">
-    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors">Layanan</a>
-    <a href="index.html#contact" class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity">Request Quote</a>
+  <div class="flex items-center gap-3">
+    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors" data-i18n="d.nav.services">Layanan</a>
+    <button onclick="toggleLang()" class="lang-btn border border-outline rounded px-2 py-1 text-[12px] font-technical-mono font-bold text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors">EN</button>
+    <a href="index.html#contact" class="hidden md:inline-block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="d.nav.quote">Minta Penawaran</a>
   </div>
 </div>
 </nav>
@@ -36,22 +37,22 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
 <main class="max-w-[860px] mx-auto px-page-margin-x">
 
   <div class="flex items-center gap-2 pt-6 text-on-surface-variant font-body-base text-[14px]">
-    <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+    <a href="index.html" class="hover:text-secondary transition-colors" data-i18n="bc.home">Beranda</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <a href="index.html#services" class="hover:text-secondary transition-colors">Layanan</a>
+    <a href="index.html#services" class="hover:text-secondary transition-colors" data-i18n="bc.services">Layanan</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <span class="text-primary font-bold">Pengendalian Nyamuk</span>
+    <span class="text-primary font-bold" data-i18n="page.title">Pengendalian Nyamuk</span>
   </div>
 
   <section class="py-section-gap flex flex-col gap-6">
     <div class="inline-flex items-center px-3 py-1 bg-pale-green text-secondary font-technical-mono text-technical-mono rounded-full w-fit">
       <span class="material-symbols-outlined text-[14px] mr-2">air</span>MOSQUITO CONTROL
     </div>
-    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight">Pengendalian Nyamuk <br/><span class="text-secondary">Cegah DBD & Malaria</span></h1>
-    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]">Nyamuk adalah vektor penyakit mematikan seperti DBD, malaria, dan chikungunya. PestOne menggunakan metode fogging dan residual spray yang efektif untuk menekan populasi nyamuk di lingkungan Anda secara drastis.</p>
+    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight" data-i18n="page.h1">Pengendalian Nyamuk <br/><span class="text-secondary">Cegah DBD & Malaria</span></h1>
+    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]" data-i18n="page.desc">Nyamuk adalah vektor penyakit mematikan seperti DBD, malaria, dan chikungunya. PestOne menggunakan metode fogging dan residual spray yang efektif untuk menekan populasi nyamuk di lingkungan Anda secara drastis.</p>
     <div class="flex gap-4 flex-wrap">
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Gratis</a>
-      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all">Lihat Layanan Lain</a>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult">Konsultasi Gratis</a>
+      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all" data-i18n="d.other">Lihat Layanan Lain</a>
     </div>
     <div class="w-full h-[380px] rounded-xl overflow-hidden shadow-sm">
       <img src="https://images.unsplash.com/photo-1530650610418-03403bebf100?w=1200&h=500&fit=crop&q=80" alt="Nyamuk makro" class="w-full h-full object-cover"/>
@@ -59,86 +60,86 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Mengapa Berbahaya</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Penyakit yang Dibawa Nyamuk</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.why">Mengapa Berbahaya</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.why.title">Penyakit yang Dibawa Nyamuk</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">bloodtype</span>
-        <h3 class="font-bold text-primary text-[18px]">Demam Berdarah (DBD)</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Ditularkan oleh nyamuk Aedes aegypti, DBD merupakan salah satu penyebab kematian tertinggi di Indonesia. Ribuan kasus dilaporkan setiap tahunnya.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why1.title">Demam Berdarah (DBD)</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why1.desc">Ditularkan oleh nyamuk Aedes aegypti, DBD merupakan salah satu penyebab kematian tertinggi di Indonesia. Ribuan kasus dilaporkan setiap tahunnya.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">sick</span>
-        <h3 class="font-bold text-primary text-[18px]">Malaria</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Nyamuk Anopheles betina menularkan parasit plasmodium penyebab malaria yang dapat berakibat fatal jika tidak segera ditangani.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why2.title">Malaria</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why2.desc">Nyamuk Anopheles betina menularkan parasit plasmodium penyebab malaria yang dapat berakibat fatal jika tidak segera ditangani.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">coronavirus</span>
-        <h3 class="font-bold text-primary text-[18px]">Chikungunya & Zika</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Virus chikungunya menyebabkan nyeri sendi hebat berhari-hari, sedangkan Zika berbahaya bagi ibu hamil karena dapat menyebabkan cacat janin.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why3.title">Chikungunya & Zika</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why3.desc">Virus chikungunya menyebabkan nyeri sendi hebat berhari-hari, sedangkan Zika berbahaya bagi ibu hamil karena dapat menyebabkan cacat janin.</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Proses Kami</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">4 Tahap Pengendalian Nyamuk Efektif</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.process">Proses Kami</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.process.title">4 Tahap Pengendalian Nyamuk Efektif</h2>
     <div class="flex flex-col gap-6">
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">1</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Survey Breeding Site</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Identifikasi semua genangan air potensial (bak mandi, talang, pot tanaman, dll.) yang menjadi tempat perkembangbiakan larva nyamuk di sekitar properti.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc1.title">Survey Breeding Site</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc1.desc">Identifikasi semua genangan air potensial (bak mandi, talang, pot tanaman, dll.) yang menjadi tempat perkembangbiakan larva nyamuk di sekitar properti.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">2</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Larvasiding</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Aplikasi larvisida biologi (Bacillus thuringiensis israelensis) di genangan air yang tidak bisa dikuras untuk membunuh larva sebelum berkembang menjadi nyamuk dewasa.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc2.title">Larvasiding</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc2.desc">Aplikasi larvisida biologi (Bacillus thuringiensis israelensis) di genangan air yang tidak bisa dikuras untuk membunuh larva sebelum berkembang menjadi nyamuk dewasa.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">3</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Fogging ULV</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Fogging ultra-low volume untuk membunuh nyamuk dewasa yang aktif di area luar dan dalam bangunan. Partikel insektisida yang sangat halus menjangkau semua sudut area treatment.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc3.title">Fogging ULV</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc3.desc">Fogging ultra-low volume untuk membunuh nyamuk dewasa yang aktif di area luar dan dalam bangunan. Partikel insektisida yang sangat halus menjangkau semua sudut area treatment.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">4</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Residual Spray</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Aplikasi insektisida residual di dinding, langit-langit, dan permukaan istirahat nyamuk untuk perlindungan jangka panjang hingga 3 bulan.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc4.title">Residual Spray</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc4.desc">Aplikasi insektisida residual di dinding, langit-langit, dan permukaan istirahat nyamuk untuk perlindungan jangka panjang hingga 3 bulan.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">FAQ</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Pertanyaan Umum</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.faq">FAQ</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="d.faq.title">Pertanyaan Umum</h2>
     <div class="flex flex-col gap-4">
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Apakah fogging aman untuk anak-anak?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Anak-anak, lansia, dan ibu hamil sebaiknya meninggalkan area fogging selama prosedur berlangsung dan 1 jam setelahnya. Produk yang kami gunakan sudah memenuhi standar WHO.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq1.q">Apakah fogging aman untuk anak-anak?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq1.a">Anak-anak, lansia, dan ibu hamil sebaiknya meninggalkan area fogging selama prosedur berlangsung dan 1 jam setelahnya. Produk yang kami gunakan sudah memenuhi standar WHO.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Seberapa sering perlu dilakukan fogging?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Untuk area residensial, fogging disarankan setiap 1–3 bulan atau segera saat musim hujan tiba. Untuk fasilitas publik dan kawasan perumahan, kami menyediakan paket bulanan.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq2.q">Seberapa sering perlu dilakukan fogging?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq2.a">Untuk area residensial, fogging disarankan setiap 1–3 bulan atau segera saat musim hujan tiba. Untuk fasilitas publik dan kawasan perumahan, kami menyediakan paket bulanan.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Apa yang harus dilakukan sebelum dan sesudah fogging?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Sebelum: tutup semua makanan dan minuman, keluarkan hewan peliharaan. Sesudah: buka jendela untuk ventilasi, bersihkan permukaan makanan sebelum digunakan, dan isi ulang tempat air minum hewan peliharaan.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq3.q">Apa yang harus dilakukan sebelum dan sesudah fogging?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq3.a">Sebelum: tutup semua makanan dan minuman, keluarkan hewan peliharaan. Sesudah: buka jendela untuk ventilasi, bersihkan permukaan makanan sebelum digunakan, dan isi ulang tempat air minum hewan peliharaan.</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap">
     <div class="bg-primary-container rounded-2xl p-8 md:p-12 text-center flex flex-col items-center gap-6">
-      <h2 class="font-headline-md text-headline-md text-white font-bold">Lindungi Keluarga dari Nyamuk Berbahaya</h2>
-      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]">Jangan tunggu sampai ada yang sakit. Hubungi PestOne sekarang untuk jadwalkan fogging di area Anda.</p>
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Sekarang</a>
+      <h2 class="font-headline-md text-headline-md text-white font-bold" data-i18n="page.cta.title">Lindungi Keluarga dari Nyamuk Berbahaya</h2>
+      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]" data-i18n="page.cta.desc">Jangan tunggu sampai ada yang sakit. Hubungi PestOne sekarang untuk jadwalkan fogging di area Anda.</p>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult.now">Konsultasi Sekarang</a>
     </div>
   </section>
 
@@ -151,13 +152,75 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
     <p class="font-caption-sm text-caption-sm text-on-primary-container/80 max-w-[300px] text-center md:text-left">© 2024 PestOne Pest Management. All rights reserved.</p>
   </div>
   <div class="grid grid-cols-2 gap-x-12 gap-y-4">
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Privacy Policy</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Terms of Service</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#services">Layanan</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#contact">Kontak</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.privacy" href="#">Privacy Policy</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.terms" href="#">Terms of Service</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.services" href="index.html#services">Layanan</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.contact" href="index.html#contact">Kontak</a>
   </div>
 </div>
 </footer>
-
+<script>
+const pageTranslations = {
+  id: {
+    'page.title': 'Pengendalian Nyamuk',
+    'page.h1': 'Pengendalian Nyamuk <br/><span class="text-secondary">Cegah DBD & Malaria</span>',
+    'page.desc': 'Nyamuk adalah vektor penyakit mematikan seperti DBD, malaria, dan chikungunya. PestOne menggunakan metode fogging dan residual spray yang efektif untuk menekan populasi nyamuk di lingkungan Anda secara drastis.',
+    'page.why.title': 'Penyakit yang Dibawa Nyamuk',
+    'why1.title': 'Demam Berdarah (DBD)',
+    'why1.desc': 'Ditularkan oleh nyamuk Aedes aegypti, DBD merupakan salah satu penyebab kematian tertinggi di Indonesia. Ribuan kasus dilaporkan setiap tahunnya.',
+    'why2.title': 'Malaria',
+    'why2.desc': 'Nyamuk Anopheles betina menularkan parasit plasmodium penyebab malaria yang dapat berakibat fatal jika tidak segera ditangani.',
+    'why3.title': 'Chikungunya & Zika',
+    'why3.desc': 'Virus chikungunya menyebabkan nyeri sendi hebat berhari-hari, sedangkan Zika berbahaya bagi ibu hamil karena dapat menyebabkan cacat janin.',
+    'page.process.title': '4 Tahap Pengendalian Nyamuk Efektif',
+    'proc1.title': 'Survey Breeding Site',
+    'proc1.desc': 'Identifikasi semua genangan air potensial (bak mandi, talang, pot tanaman, dll.) yang menjadi tempat perkembangbiakan larva nyamuk di sekitar properti.',
+    'proc2.title': 'Larvasiding',
+    'proc2.desc': 'Aplikasi larvisida biologi (Bacillus thuringiensis israelensis) di genangan air yang tidak bisa dikuras untuk membunuh larva sebelum berkembang menjadi nyamuk dewasa.',
+    'proc3.title': 'Fogging ULV',
+    'proc3.desc': 'Fogging ultra-low volume untuk membunuh nyamuk dewasa yang aktif di area luar dan dalam bangunan. Partikel insektisida yang sangat halus menjangkau semua sudut area treatment.',
+    'proc4.title': 'Residual Spray',
+    'proc4.desc': 'Aplikasi insektisida residual di dinding, langit-langit, dan permukaan istirahat nyamuk untuk perlindungan jangka panjang hingga 3 bulan.',
+    'faq1.q': 'Apakah fogging aman untuk anak-anak?',
+    'faq1.a': 'Anak-anak, lansia, dan ibu hamil sebaiknya meninggalkan area fogging selama prosedur berlangsung dan 1 jam setelahnya. Produk yang kami gunakan sudah memenuhi standar WHO.',
+    'faq2.q': 'Seberapa sering perlu dilakukan fogging?',
+    'faq2.a': 'Untuk area residensial, fogging disarankan setiap 1–3 bulan atau segera saat musim hujan tiba. Untuk fasilitas publik dan kawasan perumahan, kami menyediakan paket bulanan.',
+    'faq3.q': 'Apa yang harus dilakukan sebelum dan sesudah fogging?',
+    'faq3.a': 'Sebelum: tutup semua makanan dan minuman, keluarkan hewan peliharaan. Sesudah: buka jendela untuk ventilasi, bersihkan permukaan makanan sebelum digunakan, dan isi ulang tempat air minum hewan peliharaan.',
+    'page.cta.title': 'Lindungi Keluarga dari Nyamuk Berbahaya',
+    'page.cta.desc': 'Jangan tunggu sampai ada yang sakit. Hubungi PestOne sekarang untuk jadwalkan fogging di area Anda.',
+  },
+  en: {
+    'page.title': 'Mosquito Control',
+    'page.h1': 'Mosquito Control <br/><span class="text-secondary">Prevent Dengue & Malaria</span>',
+    'page.desc': 'Mosquitoes are vectors of deadly diseases such as dengue fever, malaria, and chikungunya. PestOne uses effective fogging and residual spray methods to drastically suppress mosquito populations in your environment.',
+    'page.why.title': 'Diseases Carried by Mosquitoes',
+    'why1.title': 'Dengue Fever (DHF)',
+    'why1.desc': 'Transmitted by Aedes aegypti mosquitoes, dengue fever is one of the leading causes of death in Indonesia. Thousands of cases are reported every year.',
+    'why2.title': 'Malaria',
+    'why2.desc': 'Female Anopheles mosquitoes transmit plasmodium parasites that cause malaria, which can be fatal if not treated promptly.',
+    'why3.title': 'Chikungunya & Zika',
+    'why3.desc': 'Chikungunya virus causes severe joint pain for days, while Zika is dangerous for pregnant women as it can cause fetal abnormalities.',
+    'page.process.title': '4 Steps to Effective Mosquito Control',
+    'proc1.title': 'Breeding Site Survey',
+    'proc1.desc': 'Identifying all potential standing water sources (bathtubs, gutters, plant pots, etc.) that serve as mosquito larva breeding grounds around the property.',
+    'proc2.title': 'Larviciding',
+    'proc2.desc': 'Application of biological larvicide (Bacillus thuringiensis israelensis) in water pools that cannot be drained to kill larvae before they develop into adult mosquitoes.',
+    'proc3.title': 'ULV Fogging',
+    'proc3.desc': 'Ultra-low volume fogging to kill active adult mosquitoes in outdoor and indoor areas. The extremely fine insecticide particles reach all corners of the treatment area.',
+    'proc4.title': 'Residual Spray',
+    'proc4.desc': 'Application of residual insecticide on walls, ceilings, and mosquito resting surfaces for long-term protection of up to 3 months.',
+    'faq1.q': 'Is fogging safe for children?',
+    'faq1.a': 'Children, the elderly, and pregnant women should leave the fogging area during the procedure and for 1 hour afterward. The products we use already meet WHO standards.',
+    'faq2.q': 'How often should fogging be done?',
+    'faq2.a': 'For residential areas, fogging is recommended every 1–3 months or immediately when the rainy season arrives. For public facilities and housing areas, we offer monthly packages.',
+    'faq3.q': 'What should be done before and after fogging?',
+    'faq3.a': 'Before: cover all food and drinks, remove pets. After: open windows for ventilation, clean food surfaces before use, and refill pet water bowls.',
+    'page.cta.title': 'Protect Your Family from Dangerous Mosquitoes',
+    'page.cta.desc': "Don't wait until someone gets sick. Contact PestOne now to schedule fogging in your area.",
+  }
+};
+</script>
+<script src="i18n.js"></script>
 </body>
 </html>

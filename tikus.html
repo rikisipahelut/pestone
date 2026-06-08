@@ -26,9 +26,10 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-1">
     <span>Pest</span><span class="text-secondary">One</span>
   </a>
-  <div class="flex items-center gap-6">
-    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors">Layanan</a>
-    <a href="index.html#contact" class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity">Request Quote</a>
+  <div class="flex items-center gap-3">
+    <a href="index.html#services" class="hidden md:block text-on-surface-variant font-body-base text-body-base hover:text-secondary transition-colors" data-i18n="d.nav.services">Layanan</a>
+    <button onclick="toggleLang()" class="lang-btn border border-outline rounded px-2 py-1 text-[12px] font-technical-mono font-bold text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors">EN</button>
+    <a href="index.html#contact" class="hidden md:inline-block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="d.nav.quote">Minta Penawaran</a>
   </div>
 </div>
 </nav>
@@ -36,22 +37,22 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
 <main class="max-w-[860px] mx-auto px-page-margin-x">
 
   <div class="flex items-center gap-2 pt-6 text-on-surface-variant font-body-base text-[14px]">
-    <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+    <a href="index.html" class="hover:text-secondary transition-colors" data-i18n="bc.home">Beranda</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <a href="index.html#services" class="hover:text-secondary transition-colors">Layanan</a>
+    <a href="index.html#services" class="hover:text-secondary transition-colors" data-i18n="bc.services">Layanan</a>
     <span class="material-symbols-outlined text-[16px]">chevron_right</span>
-    <span class="text-primary font-bold">Pengendalian Tikus</span>
+    <span class="text-primary font-bold" data-i18n="page.title">Pengendalian Tikus</span>
   </div>
 
   <section class="py-section-gap flex flex-col gap-6">
     <div class="inline-flex items-center px-3 py-1 bg-pale-green text-secondary font-technical-mono text-technical-mono rounded-full w-fit">
       <span class="material-symbols-outlined text-[14px] mr-2">pest_control_rodent</span>RODENT CONTROL
     </div>
-    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight">Pengendalian Tikus <br/><span class="text-secondary">Aman & Efektif</span></h1>
-    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]">Tikus bukan sekadar gangguan — mereka adalah vektor penyakit berbahaya dan perusak properti serius. PestOne menggunakan pendekatan manajemen pengerat terpadu untuk eliminasi total yang aman bagi keluarga dan hewan peliharaan.</p>
+    <h1 class="font-hero text-[40px] md:text-[52px] font-bold text-primary leading-tight" data-i18n="page.h1">Pengendalian Tikus <br/><span class="text-secondary">Aman & Efektif</span></h1>
+    <p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]" data-i18n="page.desc">Tikus bukan sekadar gangguan — mereka adalah vektor penyakit berbahaya dan perusak properti serius. PestOne menggunakan pendekatan manajemen pengerat terpadu untuk eliminasi total yang aman bagi keluarga dan hewan peliharaan.</p>
     <div class="flex gap-4 flex-wrap">
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Gratis</a>
-      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all">Lihat Layanan Lain</a>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult">Konsultasi Gratis</a>
+      <a href="index.html#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base font-bold hover:bg-pale-green transition-all" data-i18n="d.other">Lihat Layanan Lain</a>
     </div>
     <div class="w-full h-[380px] rounded-xl overflow-hidden shadow-sm">
       <img src="https://images.unsplash.com/photo-1558407634-6c7a00ba4b07?w=1200&h=500&fit=crop&q=80" alt="Tikus rat" class="w-full h-full object-cover"/>
@@ -59,86 +60,86 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Mengapa Berbahaya</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Risiko Nyata dari Infestasi Tikus</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.why">Mengapa Berbahaya</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.why.title">Risiko Nyata dari Infestasi Tikus</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">coronavirus</span>
-        <h3 class="font-bold text-primary text-[18px]">Penyakit Berbahaya</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Tikus membawa leptospirosis, salmonella, hantavirus, dan berbagai penyakit lain yang dapat menular ke manusia melalui kotoran, urin, atau gigitan.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why1.title">Penyakit Berbahaya</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why1.desc">Tikus membawa leptospirosis, salmonella, hantavirus, dan berbagai penyakit lain yang dapat menular ke manusia melalui kotoran, urin, atau gigitan.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">electrical_services</span>
-        <h3 class="font-bold text-primary text-[18px]">Kerusakan Kabel & Properti</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Tikus menggerogoti kabel listrik (risiko korsleting & kebakaran), pipa, insulasi, dan material bangunan. Kerusakan bisa mencapai jutaan rupiah.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why2.title">Kerusakan Kabel & Properti</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why2.desc">Tikus menggerogoti kabel listrik (risiko korsleting & kebakaran), pipa, insulasi, dan material bangunan. Kerusakan bisa mencapai jutaan rupiah.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6 flex flex-col gap-3">
         <span class="material-symbols-outlined text-secondary text-[36px]">no_food</span>
-        <h3 class="font-bold text-primary text-[18px]">Kontaminasi Makanan</h3>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Tikus mengkontaminasi stok makanan dengan kotoran dan urin. Untuk bisnis F&B, hal ini dapat berakibat fatal bagi reputasi dan operasional.</p>
+        <h3 class="font-bold text-primary text-[18px]" data-i18n="why3.title">Kontaminasi Makanan</h3>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="why3.desc">Tikus mengkontaminasi stok makanan dengan kotoran dan urin. Untuk bisnis F&B, hal ini dapat berakibat fatal bagi reputasi dan operasional.</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Proses Kami</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">4 Tahap Manajemen Pengerat Terpadu</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.process">Proses Kami</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="page.process.title">4 Tahap Manajemen Pengerat Terpadu</h2>
     <div class="flex flex-col gap-6">
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">1</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Survey & Pemetaan Jalur</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Identifikasi titik masuk, jalur aktif, sarang, dan tingkat populasi tikus di seluruh properti menggunakan teknik tracking profesional.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc1.title">Survey & Pemetaan Jalur</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc1.desc">Identifikasi titik masuk, jalur aktif, sarang, dan tingkat populasi tikus di seluruh properti menggunakan teknik tracking profesional.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">2</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Exclusion (Penutupan Akses)</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Menutup semua titik masuk potensial menggunakan material anti-tikus seperti wire mesh, sealant, dan door sweep untuk mencegah reinvasion.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc2.title">Exclusion (Penutupan Akses)</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc2.desc">Menutup semua titik masuk potensial menggunakan material anti-tikus seperti wire mesh, sealant, dan door sweep untuk mencegah reinvasion.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">3</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Pemasangan Rodent Station</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Penempatan tamper-proof bait station dan jebakan strategis di jalur aktif tikus. Rodentisida yang digunakan aman dan tidak berbahaya bagi hewan peliharaan bila tertelan tidak langsung.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc3.title">Pemasangan Rodent Station</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc3.desc">Penempatan tamper-proof bait station dan jebakan strategis di jalur aktif tikus. Rodentisida yang digunakan aman dan tidak berbahaya bagi hewan peliharaan bila tertelan tidak langsung.</p>
         </div>
       </div>
       <div class="flex gap-6 items-start">
         <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-[18px] shrink-0">4</div>
         <div class="technical-border pl-4">
-          <h4 class="font-bold text-primary text-[18px] mb-1">Sanitasi & Monitoring</h4>
-          <p class="text-on-surface-variant font-body-base text-[14px]">Pembersihan area infestasi, rekomendasi perbaikan sanitasi, dan kunjungan monitoring rutin untuk memastikan populasi tetap nol.</p>
+          <h4 class="font-bold text-primary text-[18px] mb-1" data-i18n="proc4.title">Sanitasi & Monitoring</h4>
+          <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="proc4.desc">Pembersihan area infestasi, rekomendasi perbaikan sanitasi, dan kunjungan monitoring rutin untuk memastikan populasi tetap nol.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap border-t border-outline-variant">
-    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">FAQ</span>
-    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8">Pertanyaan Umum</h2>
+    <span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="d.faq">FAQ</span>
+    <h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-8" data-i18n="d.faq.title">Pertanyaan Umum</h2>
     <div class="flex flex-col gap-4">
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Apakah rodentisida aman untuk anak dan hewan peliharaan?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Kami menggunakan bait station tamper-proof yang hanya bisa diakses oleh tikus. Produk yang kami gunakan terdaftar resmi dan diaplikasikan sesuai standar keamanan.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq1.q">Apakah rodentisida aman untuk anak dan hewan peliharaan?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq1.a">Kami menggunakan bait station tamper-proof yang hanya bisa diakses oleh tikus. Produk yang kami gunakan terdaftar resmi dan diaplikasikan sesuai standar keamanan.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Berapa lama tikus hilang setelah treatment?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Dalam 1–2 minggu setelah treatment, aktivitas tikus biasanya sudah menurun drastis. Eliminasi penuh membutuhkan 2–4 minggu tergantung tingkat populasi.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq2.q">Berapa lama tikus hilang setelah treatment?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq2.a">Dalam 1–2 minggu setelah treatment, aktivitas tikus biasanya sudah menurun drastis. Eliminasi penuh membutuhkan 2–4 minggu tergantung tingkat populasi.</p>
       </div>
       <div class="bg-white border border-outline-variant rounded-xl p-6">
-        <h4 class="font-bold text-primary mb-2">Apakah saya perlu keluar rumah saat treatment?</h4>
-        <p class="text-on-surface-variant font-body-base text-[14px]">Untuk pemasangan bait station, tidak perlu keluar rumah. Teknisi kami akan mengerjakan dengan cepat dan bersih tanpa mengganggu aktivitas Anda.</p>
+        <h4 class="font-bold text-primary mb-2" data-i18n="faq3.q">Apakah saya perlu keluar rumah saat treatment?</h4>
+        <p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="faq3.a">Untuk pemasangan bait station, tidak perlu keluar rumah. Teknisi kami akan mengerjakan dengan cepat dan bersih tanpa mengganggu aktivitas Anda.</p>
       </div>
     </div>
   </section>
 
   <section class="py-section-gap">
     <div class="bg-primary-container rounded-2xl p-8 md:p-12 text-center flex flex-col items-center gap-6">
-      <h2 class="font-headline-md text-headline-md text-white font-bold">Bebaskan Properti Anda dari Tikus?</h2>
-      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]">Konsultasikan masalah tikus Anda dengan tim ahli PestOne. Inspeksi gratis, solusi cepat.</p>
-      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity">Konsultasi Sekarang</a>
+      <h2 class="font-headline-md text-headline-md text-white font-bold" data-i18n="page.cta.title">Bebaskan Properti Anda dari Tikus?</h2>
+      <p class="text-on-primary-container font-body-base text-body-base max-w-[480px]" data-i18n="page.cta.desc">Konsultasikan masalah tikus Anda dengan tim ahli PestOne. Inspeksi gratis, solusi cepat.</p>
+      <a href="index.html#contact" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-body-base font-bold hover:opacity-90 transition-opacity" data-i18n="d.consult.now">Konsultasi Sekarang</a>
     </div>
   </section>
 
@@ -151,13 +152,75 @@ body { font-family: 'DM Sans', sans-serif; background-color: #fafaf5; color: #1a
     <p class="font-caption-sm text-caption-sm text-on-primary-container/80 max-w-[300px] text-center md:text-left">© 2024 PestOne Pest Management. All rights reserved.</p>
   </div>
   <div class="grid grid-cols-2 gap-x-12 gap-y-4">
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Privacy Policy</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="#">Terms of Service</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#services">Layanan</a>
-    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" href="index.html#contact">Kontak</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.privacy" href="#">Privacy Policy</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.terms" href="#">Terms of Service</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.services" href="index.html#services">Layanan</a>
+    <a class="font-caption-sm text-caption-sm text-on-primary-container/80 hover:text-white transition-colors" data-i18n="f.contact" href="index.html#contact">Kontak</a>
   </div>
 </div>
 </footer>
-
+<script>
+const pageTranslations = {
+  id: {
+    'page.title': 'Pengendalian Tikus',
+    'page.h1': 'Pengendalian Tikus <br/><span class="text-secondary">Aman & Efektif</span>',
+    'page.desc': 'Tikus bukan sekadar gangguan — mereka adalah vektor penyakit berbahaya dan perusak properti serius. PestOne menggunakan pendekatan manajemen pengerat terpadu untuk eliminasi total yang aman bagi keluarga dan hewan peliharaan.',
+    'page.why.title': 'Risiko Nyata dari Infestasi Tikus',
+    'why1.title': 'Penyakit Berbahaya',
+    'why1.desc': 'Tikus membawa leptospirosis, salmonella, hantavirus, dan berbagai penyakit lain yang dapat menular ke manusia melalui kotoran, urin, atau gigitan.',
+    'why2.title': 'Kerusakan Kabel & Properti',
+    'why2.desc': 'Tikus menggerogoti kabel listrik (risiko korsleting & kebakaran), pipa, insulasi, dan material bangunan. Kerusakan bisa mencapai jutaan rupiah.',
+    'why3.title': 'Kontaminasi Makanan',
+    'why3.desc': 'Tikus mengkontaminasi stok makanan dengan kotoran dan urin. Untuk bisnis F&B, hal ini dapat berakibat fatal bagi reputasi dan operasional.',
+    'page.process.title': '4 Tahap Manajemen Pengerat Terpadu',
+    'proc1.title': 'Survey & Pemetaan Jalur',
+    'proc1.desc': 'Identifikasi titik masuk, jalur aktif, sarang, dan tingkat populasi tikus di seluruh properti menggunakan teknik tracking profesional.',
+    'proc2.title': 'Exclusion (Penutupan Akses)',
+    'proc2.desc': 'Menutup semua titik masuk potensial menggunakan material anti-tikus seperti wire mesh, sealant, dan door sweep untuk mencegah reinvasion.',
+    'proc3.title': 'Pemasangan Rodent Station',
+    'proc3.desc': 'Penempatan tamper-proof bait station dan jebakan strategis di jalur aktif tikus. Rodentisida yang digunakan aman dan tidak berbahaya bagi hewan peliharaan bila tertelan tidak langsung.',
+    'proc4.title': 'Sanitasi & Monitoring',
+    'proc4.desc': 'Pembersihan area infestasi, rekomendasi perbaikan sanitasi, dan kunjungan monitoring rutin untuk memastikan populasi tetap nol.',
+    'faq1.q': 'Apakah rodentisida aman untuk anak dan hewan peliharaan?',
+    'faq1.a': 'Kami menggunakan bait station tamper-proof yang hanya bisa diakses oleh tikus. Produk yang kami gunakan terdaftar resmi dan diaplikasikan sesuai standar keamanan.',
+    'faq2.q': 'Berapa lama tikus hilang setelah treatment?',
+    'faq2.a': 'Dalam 1–2 minggu setelah treatment, aktivitas tikus biasanya sudah menurun drastis. Eliminasi penuh membutuhkan 2–4 minggu tergantung tingkat populasi.',
+    'faq3.q': 'Apakah saya perlu keluar rumah saat treatment?',
+    'faq3.a': 'Untuk pemasangan bait station, tidak perlu keluar rumah. Teknisi kami akan mengerjakan dengan cepat dan bersih tanpa mengganggu aktivitas Anda.',
+    'page.cta.title': 'Bebaskan Properti Anda dari Tikus?',
+    'page.cta.desc': 'Konsultasikan masalah tikus Anda dengan tim ahli PestOne. Inspeksi gratis, solusi cepat.',
+  },
+  en: {
+    'page.title': 'Rodent Control',
+    'page.h1': 'Rodent Control <br/><span class="text-secondary">Safe & Effective</span>',
+    'page.desc': 'Rats are more than a nuisance — they are vectors of dangerous diseases and serious property destroyers. PestOne uses an integrated rodent management approach for total elimination that is safe for your family and pets.',
+    'page.why.title': 'Real Risks from a Rodent Infestation',
+    'why1.title': 'Dangerous Diseases',
+    'why1.desc': 'Rats carry leptospirosis, salmonella, hantavirus, and other diseases that can be transmitted to humans through droppings, urine, or bites.',
+    'why2.title': 'Cable & Property Damage',
+    'why2.desc': 'Rats gnaw electrical cables (risk of short circuit & fire), pipes, insulation, and building materials. The damage can reach millions of rupiah.',
+    'why3.title': 'Food Contamination',
+    'why3.desc': 'Rats contaminate food stocks with droppings and urine. For F&B businesses, this can be fatal to reputation and operations.',
+    'page.process.title': '4 Steps to Integrated Rodent Management',
+    'proc1.title': 'Survey & Route Mapping',
+    'proc1.desc': 'Identify entry points, active trails, nests, and population levels throughout the property using professional tracking techniques.',
+    'proc2.title': 'Exclusion (Access Sealing)',
+    'proc2.desc': 'Sealing all potential entry points using anti-rodent materials such as wire mesh, sealant, and door sweeps to prevent reinvasion.',
+    'proc3.title': 'Rodent Station Installation',
+    'proc3.desc': 'Placement of tamper-proof bait stations and strategic traps on active rat trails. Rodenticide used is safe and not harmful to pets if not directly ingested.',
+    'proc4.title': 'Sanitation & Monitoring',
+    'proc4.desc': 'Cleaning infestation areas, sanitation improvement recommendations, and regular monitoring visits to ensure zero population.',
+    'faq1.q': 'Is rodenticide safe for children and pets?',
+    'faq1.a': 'We use tamper-proof bait stations that can only be accessed by rats. Our products are officially registered and applied according to safety standards.',
+    'faq2.q': 'How long until rats are gone after treatment?',
+    'faq2.a': 'Within 1–2 weeks after treatment, rat activity usually drops drastically. Full elimination takes 2–4 weeks depending on population level.',
+    'faq3.q': 'Do I need to leave home during treatment?',
+    'faq3.a': 'For bait station installation, there is no need to leave the house. Our technicians will work quickly and cleanly without disrupting your activities.',
+    'page.cta.title': 'Free Your Property from Rodents?',
+    'page.cta.desc': 'Consult your rodent problem with the PestOne expert team. Free inspection, fast solutions.',
+  }
+};
+</script>
+<script src="i18n.js"></script>
 </body>
 </html>

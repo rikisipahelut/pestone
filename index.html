@@ -135,31 +135,32 @@
 <span>Pest</span><span class="text-secondary">One</span>
 </div>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary pb-1 font-body-base text-body-base transition-all duration-200" href="#services">Services</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed font-body-base text-body-base transition-all duration-200" href="#about">About</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed font-body-base text-body-base transition-all duration-200" href="#quality">Quality</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed font-body-base text-body-base transition-all duration-200" href="#contact">Contact</a>
+<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary pb-1 font-body-base text-body-base transition-all duration-200" data-i18n="nav.services" href="#services">Layanan</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed font-body-base text-body-base transition-all duration-200" data-i18n="nav.about" href="#about">Tentang</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed font-body-base text-body-base transition-all duration-200" data-i18n="nav.quality" href="#quality">Keunggulan</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed font-body-base text-body-base transition-all duration-200" data-i18n="nav.contact" href="#contact">Kontak</a>
 </div>
+<div class="flex items-center gap-2">
+<button onclick="toggleLang()" class="lang-btn border border-outline rounded px-2 py-1 text-[12px] font-technical-mono font-bold text-on-surface-variant hover:text-secondary hover:border-secondary transition-colors">EN</button>
 <button id="mobile-menu-btn"
   class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface hover:bg-surface-container transition-colors"
   aria-label="Open menu" aria-expanded="false">
   <span id="menu-icon" class="material-symbols-outlined">menu</span>
 </button>
-<button class="hidden md:block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity">
-                Request Quote
-            </button>
+<button class="hidden md:block bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="nav.quote">Minta Penawaran</button>
+</div>
 </div>
 </nav>
 <!-- Mobile Menu Panel -->
 <div id="mobile-menu" class="hidden md:hidden w-full bg-surface border-b border-outline-variant sticky top-[65px] z-40 shadow-sm">
   <div class="max-w-[860px] mx-auto px-page-margin-x py-4 flex flex-col gap-1">
-    <a href="#services" class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all">Services</a>
-    <a href="#about"    class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all">About</a>
-    <a href="#quality"  class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all">Quality</a>
-    <a href="#contact"  class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all">Contact</a>
+    <a href="#services" class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all" data-i18n="nav.services">Layanan</a>
+    <a href="#about"    class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all" data-i18n="nav.about">Tentang</a>
+    <a href="#quality"  class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all" data-i18n="nav.quality">Keunggulan</a>
+    <a href="#contact"  class="block py-3 px-4 rounded-lg text-on-surface-variant font-body-base text-body-base hover:bg-surface-container hover:text-secondary transition-all" data-i18n="nav.contact">Kontak</a>
     <div class="pt-3 border-t border-outline-variant mt-2">
-      <button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity">
-        Request Quote
+      <button class="w-full bg-secondary text-on-secondary py-3 rounded-lg font-body-base text-body-base hover:opacity-90 transition-opacity" data-i18n="nav.quote">
+        Minta Penawaran
       </button>
     </div>
   </div>
@@ -168,21 +169,20 @@
 <!-- Hero Section -->
 <section class="py-section-gap flex flex-col items-start gap-6">
 <div class="inline-flex items-center px-3 py-1 bg-pale-green text-on-secondary-container font-technical-mono text-technical-mono rounded-full">
-<span class="material-symbols-outlined text-[14px] mr-2">verified_user</span>
-                Sistem Perlindungan Tersertifikasi
-            </div>
-<h1 class="font-hero text-hero text-primary leading-tight tracking-tight md:text-display-lg text-display-lg-mobile">
+<span class="material-symbols-outlined text-[14px] mr-2">verified_user</span><span data-i18n="hero.badge">Sistem Perlindungan Tersertifikasi</span>
+</div>
+<h1 class="font-hero text-hero text-primary leading-tight tracking-tight md:text-display-lg text-display-lg-mobile" data-i18n="hero.title">
                 Solusi Profesional <br/>
 <span class="text-secondary">Pengendalian Hama</span>
 </h1>
-<p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]">
+<p class="font-body-base text-body-base text-on-surface-variant max-w-[600px]" data-i18n="hero.desc">
                 Melindungi hunian dan bisnis Anda dari ancaman hama dengan metode ilmiah yang aman, efektif, dan berkelanjutan. Standar kualitas klinis untuk kenyamanan maksimal.
             </p>
 <div class="flex flex-wrap gap-4 mt-4">
-<a href="#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base text-body-base font-bold shadow-sm hover:translate-y-[-1px] transition-all">
+<a href="#contact" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-body-base text-body-base font-bold shadow-sm hover:translate-y-[-1px] transition-all" data-i18n="hero.btn1">
                     Konsultasi Gratis
                 </a>
-<a href="#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base text-body-base font-bold hover:bg-pale-green transition-all">
+<a href="#services" class="border-[1.5px] border-deep-green text-deep-green px-8 py-4 rounded-lg font-body-base text-body-base font-bold hover:bg-pale-green transition-all" data-i18n="hero.btn2">
                     Lihat Layanan
                 </a>
 </div>
@@ -193,8 +193,8 @@
 <span class="material-symbols-outlined">biotech</span>
 </div>
 <div>
-<div class="font-technical-mono text-technical-mono font-bold text-deep-green">TEKNOLOGI TERKINI</div>
-<div class="text-caption-sm uppercase tracking-widest text-on-surface-variant">Metode Non-Toksik</div>
+<div class="font-technical-mono text-technical-mono font-bold text-deep-green" data-i18n="hero.tech">TEKNOLOGI TERKINI</div>
+<div class="text-caption-sm uppercase tracking-widest text-on-surface-variant" data-i18n="hero.method">Metode Non-Toksik</div>
 </div>
 </div>
 </div>
@@ -203,12 +203,12 @@
 <section class="py-section-gap border-t border-outline-variant" id="about">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 <div class="flex flex-col gap-6">
-<span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Tentang PestOne</span>
-<h2 class="font-headline-md text-headline-md text-primary font-bold">Dedikasi Terhadap Keamanan dan Kebersihan Sejak 2010</h2>
-<div class="technical-border pl-6 py-2 italic text-on-surface-variant font-body-base text-body-base">
+<span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="about.label">Tentang PestOne</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold" data-i18n="about.title">Dedikasi Terhadap Keamanan dan Kebersihan Sejak 2010</h2>
+<div class="technical-border pl-6 py-2 italic text-on-surface-variant font-body-base text-body-base" data-i18n="about.quote">
                         "Misi kami adalah menghadirkan lingkungan yang sehat bagi masyarakat Indonesia melalui pengendalian hama berbasis sains."
                     </div>
-<p class="font-body-base text-body-base text-on-surface-variant">
+<p class="font-body-base text-body-base text-on-surface-variant" data-i18n="about.desc">
                         PestOne lahir dari visi untuk merevolusi industri pengendalian hama di Indonesia. Kami tidak hanya membasmi hama, tapi kami membangun benteng perlindungan untuk keluarga dan aset bisnis Anda. Dengan tim ahli entomologi, kami memastikan setiap prosedur dilakukan dengan presisi klinis.
                     </p>
 </div>
@@ -216,19 +216,19 @@
 <div class="grid grid-cols-2 gap-3 md:gap-4">
 <div class="bg-white p-4 md:p-6 rounded-lg border border-outline-variant text-center">
 <div class="text-[28px] md:text-display-lg text-secondary font-bold leading-tight">14+</div>
-<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1">Tahun Pengalaman</div>
+<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1" data-i18n="about.stat1">Tahun Pengalaman</div>
 </div>
 <div class="bg-white p-4 md:p-6 rounded-lg border border-outline-variant text-center">
 <div class="text-[28px] md:text-display-lg text-secondary font-bold leading-tight">5k+</div>
-<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1">Klien Puas</div>
+<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1" data-i18n="about.stat2">Klien Puas</div>
 </div>
 <div class="bg-white p-4 md:p-6 rounded-lg border border-outline-variant text-center">
 <div class="text-[28px] md:text-display-lg text-secondary font-bold leading-tight">50+</div>
-<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1">Teknisi Ahli</div>
+<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1" data-i18n="about.stat3">Teknisi Ahli</div>
 </div>
 <div class="bg-white p-4 md:p-6 rounded-lg border border-outline-variant text-center">
 <div class="text-[28px] md:text-display-lg text-secondary font-bold leading-tight">100%</div>
-<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1">Garansi Hasil</div>
+<div class="font-caption-sm uppercase tracking-wider text-on-surface-variant mt-1" data-i18n="about.stat4">Garansi Hasil</div>
 </div>
 </div>
 </div>
@@ -237,8 +237,8 @@
 <!-- Services Section -->
 <section class="py-section-gap" id="services">
 <div class="text-center mb-12">
-<span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Layanan Unggulan</span>
-<h2 class="font-headline-md text-headline-md text-primary font-bold mt-2">Solusi Terpadu untuk Segala Masalah Hama</h2>
+<span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="svc.label">Layanan Unggulan</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-2" data-i18n="svc.title">Solusi Terpadu untuk Segala Masalah Hama</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 <!-- Service Card 1 -->
@@ -250,10 +250,10 @@
 </div>
 </div>
 <div class="p-6 flex flex-col gap-3">
-<h3 class="font-headline-md text-[20px] font-bold text-primary">Pengendalian Rayap</h3>
-<p class="font-body-base text-[14px] text-on-surface-variant">Sistem eliminasi koloni secara tuntas menggunakan teknologi baiting tercanggih untuk perlindungan struktural permanen.</p>
+<h3 class="font-headline-md text-[20px] font-bold text-primary" data-i18n="svc1.title">Pengendalian Rayap</h3>
+<p class="font-body-base text-[14px] text-on-surface-variant" data-i18n="svc1.desc">Sistem eliminasi koloni secara tuntas menggunakan teknologi baiting tercanggih untuk perlindungan struktural permanen.</p>
 <a class="mt-4 flex items-center gap-2 text-secondary font-bold text-body-base group" href="rayap.html">
-                            Selengkapnya <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+  <span data-i18n="svc.more">Selengkapnya</span> <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -263,10 +263,10 @@
 <img alt="Rodent control solutions" class="w-full h-full object-cover" data-alt="A highly organized commercial storage area featuring discreet, modern rodent monitoring stations along a clean wall. The environment is orderly and well-lit with cool fluorescent lighting, emphasizing an industrial-grade standard of hygiene and safety. The color scheme is professional, utilizing various shades of deep green and neutral grays." src="https://images.unsplash.com/photo-1558407634-6c7a00ba4b07?w=600&h=400&fit=crop&q=80"/>
 </div>
 <div class="p-6 flex flex-col gap-3">
-<h3 class="font-headline-md text-[20px] font-bold text-primary">Pengendalian Tikus</h3>
-<p class="font-body-base text-[14px] text-on-surface-variant">Manajemen pengerat terpadu dengan fokus pada penutupan akses masuk dan eliminasi populasi yang aman bagi hewan peliharaan.</p>
+<h3 class="font-headline-md text-[20px] font-bold text-primary" data-i18n="svc2.title">Pengendalian Tikus</h3>
+<p class="font-body-base text-[14px] text-on-surface-variant" data-i18n="svc2.desc">Manajemen pengerat terpadu dengan fokus pada penutupan akses masuk dan eliminasi populasi yang aman bagi hewan peliharaan.</p>
 <a class="mt-4 flex items-center gap-2 text-secondary font-bold text-body-base group" href="tikus.html">
-                            Selengkapnya <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+  <span data-i18n="svc.more">Selengkapnya</span> <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -276,10 +276,10 @@
 <img alt="General pest control disinfection" class="w-full h-full object-cover" data-alt="A technician in a full protective laboratory suit performing a precise misting service in a modern, sun-drenched office space. The mist is fine and ethereal, creating a sense of total purification and safety. The mood is calm and restorative, with the soft greens of indoor plants complementing the clinical brand colors of PestOne." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB5xlXXZATWbK_m3cgv0GP25Z0t9SNryzDgrYEqdCI1jbfgheW0ADZomHUW8s-reT4kX6bPIf7xv6RuULXF-3EgQASMD0ivujgmUqqA34feX-OhLFgN7Y_GmGzMFIN0sq8cyPU0B-TlGdnPU2Llc58TYR-AQoG7YYN0ASvxySNfDBCnmWXxnx041_n5knL1g3WGCG7oDVwOMppXBIIwZepNfZH3o5E4XcLPcjFt4AvNkUXur_plkJ3ReOkSh4jYF2p0QDOaDAty7Ji"/>
 </div>
 <div class="p-6 flex flex-col gap-3">
-<h3 class="font-headline-md text-[20px] font-bold text-primary">General Pest Control</h3>
-<p class="font-body-base text-[14px] text-on-surface-variant">Perlindungan menyeluruh terhadap serangga terbang dan merayap (kecoa, semut, nyamuk) untuk kenyamanan harian Anda.</p>
+<h3 class="font-headline-md text-[20px] font-bold text-primary" data-i18n="svc3.title">General Pest Control</h3>
+<p class="font-body-base text-[14px] text-on-surface-variant" data-i18n="svc3.desc">Perlindungan menyeluruh terhadap serangga terbang dan merayap (kecoa, semut, nyamuk) untuk kenyamanan harian Anda.</p>
 <a class="mt-4 flex items-center gap-2 text-secondary font-bold text-body-base group" href="general-pest.html">
-                            Selengkapnya <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+  <span data-i18n="svc.more">Selengkapnya</span> <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -289,10 +289,10 @@
 <img alt="Ant control service" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1612960891902-b525d250aa89?w=600&h=400&fit=crop&q=80"/>
 </div>
 <div class="p-6 flex flex-col gap-3">
-<h3 class="font-headline-md text-[20px] font-bold text-primary">Pengendalian Semut</h3>
-<p class="font-body-base text-[14px] text-on-surface-variant">Eliminasi koloni semut dari dalam dan luar bangunan menggunakan umpan gel yang aman dan efektif tanpa mengganggu aktivitas harian.</p>
+<h3 class="font-headline-md text-[20px] font-bold text-primary" data-i18n="svc4.title">Pengendalian Semut</h3>
+<p class="font-body-base text-[14px] text-on-surface-variant" data-i18n="svc4.desc">Eliminasi koloni semut dari dalam dan luar bangunan menggunakan umpan gel yang aman dan efektif tanpa mengganggu aktivitas harian.</p>
 <a class="mt-4 flex items-center gap-2 text-secondary font-bold text-body-base group" href="semut.html">
-                            Selengkapnya <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+  <span data-i18n="svc.more">Selengkapnya</span> <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -302,10 +302,10 @@
 <img alt="Mosquito fogging service" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1530650610418-03403bebf100?w=600&h=400&fit=crop&q=80"/>
 </div>
 <div class="p-6 flex flex-col gap-3">
-<h3 class="font-headline-md text-[20px] font-bold text-primary">Pengendalian Nyamuk</h3>
-<p class="font-body-base text-[14px] text-on-surface-variant">Fogging dan residual spray untuk menekan populasi nyamuk dan mencegah penyebaran penyakit DBD serta malaria di lingkungan Anda.</p>
+<h3 class="font-headline-md text-[20px] font-bold text-primary" data-i18n="svc5.title">Pengendalian Nyamuk</h3>
+<p class="font-body-base text-[14px] text-on-surface-variant" data-i18n="svc5.desc">Fogging dan residual spray untuk menekan populasi nyamuk dan mencegah penyebaran penyakit DBD serta malaria di lingkungan Anda.</p>
 <a class="mt-4 flex items-center gap-2 text-secondary font-bold text-body-base group" href="nyamuk.html">
-                            Selengkapnya <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+  <span data-i18n="svc.more">Selengkapnya</span> <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -315,10 +315,10 @@
 <img alt="Fly control service" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1512967709413-3800e20783fd?w=600&h=400&fit=crop&q=80"/>
 </div>
 <div class="p-6 flex flex-col gap-3">
-<h3 class="font-headline-md text-[20px] font-bold text-primary">Pengendalian Lalat</h3>
-<p class="font-body-base text-[14px] text-on-surface-variant">Pengendalian lalat terpadu dengan metode sanitasi, perangkap elektrik, dan aplikasi insektisida terarah untuk area dapur dan industri.</p>
+<h3 class="font-headline-md text-[20px] font-bold text-primary" data-i18n="svc6.title">Pengendalian Lalat</h3>
+<p class="font-body-base text-[14px] text-on-surface-variant" data-i18n="svc6.desc">Pengendalian lalat terpadu dengan metode sanitasi, perangkap elektrik, dan aplikasi insektisida terarah untuk area dapur dan industri.</p>
 <a class="mt-4 flex items-center gap-2 text-secondary font-bold text-body-base group" href="lalat.html">
-                            Selengkapnya <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+  <span data-i18n="svc.more">Selengkapnya</span> <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -328,10 +328,10 @@
 <img alt="Cockroach control service" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1567479403609-5711aa5e0ef6?w=600&h=400&fit=crop&q=80"/>
 </div>
 <div class="p-6 flex flex-col gap-3">
-<h3 class="font-headline-md text-[20px] font-bold text-primary">Pengendalian Kecoak</h3>
-<p class="font-body-base text-[14px] text-on-surface-variant">Aplikasi gel bait dan residual spray untuk eliminasi kecoak di dapur, kamar mandi, dan area tersembunyi secara menyeluruh dan tuntas.</p>
+<h3 class="font-headline-md text-[20px] font-bold text-primary" data-i18n="svc7.title">Pengendalian Kecoak</h3>
+<p class="font-body-base text-[14px] text-on-surface-variant" data-i18n="svc7.desc">Aplikasi gel bait dan residual spray untuk eliminasi kecoak di dapur, kamar mandi, dan area tersembunyi secara menyeluruh dan tuntas.</p>
 <a class="mt-4 flex items-center gap-2 text-secondary font-bold text-body-base group" href="kecoak.html">
-                            Selengkapnya <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+  <span data-i18n="svc.more">Selengkapnya</span> <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -341,30 +341,30 @@
 <section class="py-section-gap bg-primary-container -mx-page-margin-x px-page-margin-x rounded-none md:rounded-3xl overflow-hidden relative" id="quality">
 <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#7ec8a0 1px, transparent 1px); background-size: 24px 24px;"></div>
 <div class="relative z-10 flex flex-col items-center text-center mb-12">
-<span class="font-ui-section text-ui-section uppercase tracking-widest text-mint">Keunggulan Kami</span>
-<h2 class="font-headline-md text-headline-md text-white font-bold mt-2">Standar Proteksi Tanpa Kompromi</h2>
+<span class="font-ui-section text-ui-section uppercase tracking-widest text-mint" data-i18n="q.label">Keunggulan Kami</span>
+<h2 class="font-headline-md text-headline-md text-white font-bold mt-2" data-i18n="q.title">Standar Proteksi Tanpa Kompromi</h2>
 </div>
 <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="flex flex-col items-center text-center gap-4">
 <div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
 <span class="material-symbols-outlined text-[32px]">eco</span>
 </div>
-<h4 class="font-headline-md text-[18px] font-bold text-white">Metode Aman</h4>
-<p class="font-body-base text-[14px] text-on-primary-container">Kami hanya menggunakan bahan kimia yang terdaftar resmi dan aman bagi lingkungan serta penghuni rumah.</p>
+<h4 class="font-headline-md text-[18px] font-bold text-white" data-i18n="q1.title">Metode Aman</h4>
+<p class="font-body-base text-[14px] text-on-primary-container" data-i18n="q1.desc">Kami hanya menggunakan bahan kimia yang terdaftar resmi dan aman bagi lingkungan serta penghuni rumah.</p>
 </div>
 <div class="flex flex-col items-center text-center gap-4">
 <div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
 <span class="material-symbols-outlined text-[32px]">engineering</span>
 </div>
-<h4 class="font-headline-md text-[18px] font-bold text-white">Teknisi Ahli</h4>
-<p class="font-body-base text-[14px] text-on-primary-container">Tim lapangan yang terlatih secara berkala dan memiliki sertifikasi BNSP untuk penanganan hama profesional.</p>
+<h4 class="font-headline-md text-[18px] font-bold text-white" data-i18n="q2.title">Teknisi Ahli</h4>
+<p class="font-body-base text-[14px] text-on-primary-container" data-i18n="q2.desc">Tim lapangan yang terlatih secara berkala dan memiliki sertifikasi BNSP untuk penanganan hama profesional.</p>
 </div>
 <div class="flex flex-col items-center text-center gap-4">
 <div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-2">
 <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
 </div>
-<h4 class="font-headline-md text-[18px] font-bold text-white">Hasil Terjamin</h4>
-<p class="font-body-base text-[14px] text-on-primary-container">Setiap pengerjaan dilengkapi dengan laporan detil dan garansi monitoring rutin untuk memastikan hama tidak kembali.</p>
+<h4 class="font-headline-md text-[18px] font-bold text-white" data-i18n="q3.title">Hasil Terjamin</h4>
+<p class="font-body-base text-[14px] text-on-primary-container" data-i18n="q3.desc">Setiap pengerjaan dilengkapi dengan laporan detil dan garansi monitoring rutin untuk memastikan hama tidak kembali.</p>
 </div>
 </div>
 </section>
@@ -372,27 +372,27 @@
 <section class="py-section-gap" id="contact">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 <div>
-<span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary">Hubungi Kami</span>
-<h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-6">Siap Melindungi Aset Berharga Anda</h2>
+<span class="font-ui-section text-ui-section uppercase tracking-widest text-secondary" data-i18n="ct.label">Hubungi Kami</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-2 mb-6" data-i18n="ct.title">Siap Melindungi Aset Berharga Anda</h2>
 <div class="flex flex-col gap-8">
 <div class="flex items-start gap-4">
 <span class="material-symbols-outlined text-secondary">location_on</span>
 <div>
-<h5 class="font-bold text-primary font-body-base">Kantor Pusat Tabanan</h5>
-<p class="text-on-surface-variant font-body-base text-[14px]">Jl. Tukad Yeh Empas No 13, Br. Anyar Kediri Tabanan Bali</p>
+<h5 class="font-bold text-primary font-body-base" data-i18n="ct.office">Kantor Pusat Tabanan</h5>
+<p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="ct.addr">Jl. Tukad Yeh Empas No 13, Br. Anyar Kediri Tabanan Bali</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
 <span class="material-symbols-outlined text-secondary">call</span>
 <div>
-<h5 class="font-bold text-primary font-body-base">Hotline 24/7</h5>
-<p class="text-on-surface-variant font-body-base text-[14px]">0800-1-PESTONE (Bebas Pulsa)<br/>+62 21 555 9876</p>
+<h5 class="font-bold text-primary font-body-base" data-i18n="ct.hotline">Hotline 24/7</h5>
+<p class="text-on-surface-variant font-body-base text-[14px]" data-i18n="ct.hotline.info">0800-1-PESTONE (Bebas Pulsa)<br/>+62 21 555 9876</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
 <span class="material-symbols-outlined text-secondary">mail</span>
 <div>
-<h5 class="font-bold text-primary font-body-base">Email Support</h5>
+<h5 class="font-bold text-primary font-body-base" data-i18n="ct.email">Email Support</h5>
 <p class="text-on-surface-variant font-body-base text-[14px]">care@pestone.id<br/>sales@pestone.id</p>
 </div>
 </div>
@@ -401,30 +401,33 @@
 <div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm">
 <form class="flex flex-col gap-4" onsubmit="kirimKonsultasi(event)">
 <div class="grid grid-cols-2 gap-4">
-<div class="flex flex-col gap-1">
-<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant">Nama Lengkap</label>
-<input id="form-nama" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface" placeholder="John Doe" type="text"/>
+<div class="flex flex-col gap-1" id="wrap-nama">
+<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant" data-i18n="form.name">Nama Lengkap</label>
+<input id="form-nama" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface" data-i18n-ph="form.ph.name" placeholder="John Doe" type="text"/>
 </div>
-<div class="flex flex-col gap-1">
-<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant">Nomor HP</label>
+<div class="flex flex-col gap-1" id="wrap-hp">
+<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant" data-i18n="form.phone">Nomor HP</label>
 <input id="form-hp" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface" placeholder="0812..." type="tel"/>
 </div>
 </div>
-<div class="flex flex-col gap-1">
-<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant">Jenis Layanan</label>
+<div class="flex flex-col gap-1" id="wrap-layanan">
+<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant" data-i18n="form.service">Jenis Layanan</label>
 <select id="form-layanan" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface">
-<option>Pilih Layanan</option>
-<option>Pengendalian Rayap</option>
-<option>Pengendalian Tikus</option>
-<option>Penyemprotan Disinfektan</option>
-<option>Inspeksi Menyeluruh</option>
+<option value="" data-i18n="form.opt0">Pilih Layanan</option>
+<option data-i18n="form.opt1">Pengendalian Rayap</option>
+<option data-i18n="form.opt2">Pengendalian Tikus</option>
+<option data-i18n="form.opt3">General Pest Control</option>
+<option data-i18n="form.opt4">Pengendalian Semut</option>
+<option data-i18n="form.opt5">Pengendalian Nyamuk</option>
+<option data-i18n="form.opt6">Pengendalian Lalat</option>
+<option data-i18n="form.opt7">Pengendalian Kecoak</option>
 </select>
 </div>
-<div class="flex flex-col gap-1">
-<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant">Pesan / Alamat</label>
-<textarea id="form-pesan" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface" placeholder="Jelaskan masalah hama Anda..." rows="4"></textarea>
+<div class="flex flex-col gap-1" id="wrap-pesan">
+<label class="font-caption-sm text-caption-sm uppercase text-on-surface-variant" data-i18n="form.msg">Pesan / Alamat</label>
+<textarea id="form-pesan" class="border-outline-variant focus:ring-secondary focus:border-secondary rounded-lg bg-surface" data-i18n-ph="form.ph.msg" placeholder="Jelaskan masalah hama Anda..." rows="4"></textarea>
 </div>
-<button type="submit" class="bg-secondary text-on-secondary py-4 rounded-lg font-bold font-body-base mt-2 hover:opacity-95 transition-opacity">
+<button type="submit" class="bg-secondary text-on-secondary py-4 rounded-lg font-bold font-body-base mt-2 hover:opacity-95 transition-opacity" data-i18n="form.submit">
                             Kirim Permintaan Konsultasi
                         </button>
 </form>
@@ -482,6 +485,30 @@
         });
     </script>
     <script>
+        function setFieldError(fieldId, wrapId, msg) {
+            const field = document.getElementById(fieldId);
+            const wrap  = document.getElementById(wrapId);
+            field.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
+            field.classList.remove('border-outline-variant', 'focus:border-secondary', 'focus:ring-secondary');
+            if (!wrap.querySelector('.field-error')) {
+                const err = document.createElement('p');
+                err.className = 'field-error text-red-500 text-[11px] mt-1';
+                err.textContent = msg;
+                wrap.appendChild(err);
+            }
+            field.addEventListener('input', () => clearFieldError(fieldId, wrapId), { once: true });
+            field.addEventListener('change', () => clearFieldError(fieldId, wrapId), { once: true });
+        }
+
+        function clearFieldError(fieldId, wrapId) {
+            const field = document.getElementById(fieldId);
+            const wrap  = document.getElementById(wrapId);
+            field.classList.remove('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
+            field.classList.add('border-outline-variant', 'focus:border-secondary', 'focus:ring-secondary');
+            const err = wrap.querySelector('.field-error');
+            if (err) err.remove();
+        }
+
         function kirimKonsultasi(e) {
             e.preventDefault();
             const nama    = document.getElementById('form-nama').value.trim();
@@ -489,16 +516,13 @@
             const layanan = document.getElementById('form-layanan').value;
             const pesan   = document.getElementById('form-pesan').value.trim();
 
-            const errors = [];
-            if (!nama)                          errors.push('Nama Lengkap');
-            if (!hp)                            errors.push('Nomor HP');
-            if (layanan === 'Pilih Layanan')    errors.push('Jenis Layanan');
-            if (!pesan)                         errors.push('Pesan / Alamat');
+            let valid = true;
+            if (!nama)                        { setFieldError('form-nama',    'wrap-nama',    'Nama tidak boleh kosong'); valid = false; }
+            if (!hp)                          { setFieldError('form-hp',      'wrap-hp',      'Nomor HP tidak boleh kosong'); valid = false; }
+            if (!layanan)                     { setFieldError('form-layanan', 'wrap-layanan', 'Pilih jenis layanan terlebih dahulu'); valid = false; }
+            if (!pesan)                       { setFieldError('form-pesan',   'wrap-pesan',   'Pesan / alamat tidak boleh kosong'); valid = false; }
 
-            if (errors.length > 0) {
-                alert('Harap lengkapi field berikut:\n• ' + errors.join('\n• '));
-                return;
-            }
+            if (!valid) return;
 
             const teks = `Halo PestOne, saya ingin konsultasi:%0A%0ANama: ${encodeURIComponent(nama)}%0ANomor HP: ${encodeURIComponent(hp)}%0ALayanan: ${encodeURIComponent(layanan)}%0APesan: ${encodeURIComponent(pesan)}`;
             window.open(`https://wa.me/6281934631646?text=${teks}`, '_blank');
@@ -523,4 +547,83 @@
             });
         });
     </script>
+<script>
+const pageTranslations = {
+  id: {
+    'hero.badge': 'Sistem Perlindungan Tersertifikasi',
+    'hero.title': 'Solusi Profesional <br/><span class="text-secondary">Pengendalian Hama</span>',
+    'hero.desc': 'Melindungi hunian dan bisnis Anda dari ancaman hama dengan metode ilmiah yang aman, efektif, dan berkelanjutan. Standar kualitas klinis untuk kenyamanan maksimal.',
+    'hero.btn1': 'Konsultasi Gratis', 'hero.btn2': 'Lihat Layanan',
+    'hero.tech': 'TEKNOLOGI TERKINI', 'hero.method': 'Metode Non-Toksik',
+    'about.label': 'Tentang PestOne',
+    'about.title': 'Dedikasi Terhadap Keamanan dan Kebersihan Sejak 2010',
+    'about.quote': '"Misi kami adalah menghadirkan lingkungan yang sehat bagi masyarakat Indonesia melalui pengendalian hama berbasis sains."',
+    'about.desc': 'PestOne lahir dari visi untuk merevolusi industri pengendalian hama di Indonesia. Kami tidak hanya membasmi hama, tapi kami membangun benteng perlindungan untuk keluarga dan aset bisnis Anda. Dengan tim ahli entomologi, kami memastikan setiap prosedur dilakukan dengan presisi klinis.',
+    'about.stat1': 'Tahun Pengalaman', 'about.stat2': 'Klien Puas',
+    'about.stat3': 'Teknisi Ahli', 'about.stat4': 'Garansi Hasil',
+    'svc.label': 'Layanan Unggulan', 'svc.title': 'Solusi Terpadu untuk Segala Masalah Hama',
+    'svc1.title': 'Pengendalian Rayap', 'svc1.desc': 'Sistem eliminasi koloni secara tuntas menggunakan teknologi baiting tercanggih untuk perlindungan struktural permanen.',
+    'svc2.title': 'Pengendalian Tikus', 'svc2.desc': 'Manajemen pengerat terpadu dengan fokus pada penutupan akses masuk dan eliminasi populasi yang aman bagi hewan peliharaan.',
+    'svc3.title': 'General Pest Control', 'svc3.desc': 'Perlindungan menyeluruh terhadap serangga terbang dan merayap (kecoa, semut, nyamuk) untuk kenyamanan harian Anda.',
+    'svc4.title': 'Pengendalian Semut', 'svc4.desc': 'Eliminasi koloni semut dari dalam dan luar bangunan menggunakan umpan gel yang aman dan efektif tanpa mengganggu aktivitas harian.',
+    'svc5.title': 'Pengendalian Nyamuk', 'svc5.desc': 'Fogging dan residual spray untuk menekan populasi nyamuk dan mencegah penyebaran penyakit DBD serta malaria di lingkungan Anda.',
+    'svc6.title': 'Pengendalian Lalat', 'svc6.desc': 'Pengendalian lalat terpadu dengan metode sanitasi, perangkap elektrik, dan aplikasi insektisida terarah untuk area dapur dan industri.',
+    'svc7.title': 'Pengendalian Kecoak', 'svc7.desc': 'Aplikasi gel bait dan residual spray untuk eliminasi kecoak di dapur, kamar mandi, dan area tersembunyi secara menyeluruh dan tuntas.',
+    'q.label': 'Keunggulan Kami', 'q.title': 'Standar Proteksi Tanpa Kompromi',
+    'q1.title': 'Metode Aman', 'q1.desc': 'Kami hanya menggunakan bahan kimia yang terdaftar resmi dan aman bagi lingkungan serta penghuni rumah.',
+    'q2.title': 'Teknisi Ahli', 'q2.desc': 'Tim lapangan yang terlatih secara berkala dan memiliki sertifikasi BNSP untuk penanganan hama profesional.',
+    'q3.title': 'Hasil Terjamin', 'q3.desc': 'Setiap pengerjaan dilengkapi dengan laporan detil dan garansi monitoring rutin untuk memastikan hama tidak kembali.',
+    'ct.label': 'Hubungi Kami', 'ct.title': 'Siap Melindungi Aset Berharga Anda',
+    'ct.office': 'Kantor Pusat Tabanan', 'ct.addr': 'Jl. Tukad Yeh Empas No 13, Br. Anyar Kediri Tabanan Bali',
+    'ct.hotline': 'Hotline 24/7', 'ct.hotline.info': '0800-1-PESTONE (Bebas Pulsa)<br/>+62 21 555 9876',
+    'ct.email': 'Email Support',
+    'form.name': 'Nama Lengkap', 'form.phone': 'Nomor HP',
+    'form.service': 'Jenis Layanan', 'form.msg': 'Pesan / Alamat',
+    'form.ph.name': 'John Doe', 'form.ph.msg': 'Jelaskan masalah hama Anda...',
+    'form.opt0': 'Pilih Layanan', 'form.opt1': 'Pengendalian Rayap',
+    'form.opt2': 'Pengendalian Tikus', 'form.opt3': 'General Pest Control',
+    'form.opt4': 'Pengendalian Semut', 'form.opt5': 'Pengendalian Nyamuk',
+    'form.opt6': 'Pengendalian Lalat', 'form.opt7': 'Pengendalian Kecoak',
+    'form.submit': 'Kirim Permintaan Konsultasi',
+  },
+  en: {
+    'hero.badge': 'Certified Protection System',
+    'hero.title': 'Professional Solution <br/><span class="text-secondary">for Pest Control</span>',
+    'hero.desc': 'Protecting your home and business from pest threats using safe, effective, and sustainable scientific methods. Clinical quality standards for maximum comfort.',
+    'hero.btn1': 'Free Consultation', 'hero.btn2': 'Our Services',
+    'hero.tech': 'LATEST TECHNOLOGY', 'hero.method': 'Non-Toxic Method',
+    'about.label': 'About PestOne',
+    'about.title': 'Dedicated to Safety and Cleanliness Since 2010',
+    'about.quote': '"Our mission is to create healthy environments for the people of Indonesia through science-based pest control."',
+    'about.desc': "PestOne was born from a vision to revolutionize the pest control industry in Indonesia. We don't just eliminate pests — we build a fortress of protection for your family and business assets. With our team of entomology experts, we ensure every procedure is performed with clinical precision.",
+    'about.stat1': 'Years of Experience', 'about.stat2': 'Happy Clients',
+    'about.stat3': 'Expert Technicians', 'about.stat4': 'Results Guaranteed',
+    'svc.label': 'Featured Services', 'svc.title': 'Integrated Solutions for All Pest Problems',
+    'svc1.title': 'Termite Control', 'svc1.desc': 'Complete colony elimination using the most advanced baiting technology for permanent structural protection.',
+    'svc2.title': 'Rodent Control', 'svc2.desc': 'Integrated rodent management focused on sealing entry points and safe population elimination for pet-friendly results.',
+    'svc3.title': 'General Pest Control', 'svc3.desc': 'Comprehensive protection against flying and crawling insects (cockroaches, ants, mosquitoes) for your daily comfort.',
+    'svc4.title': 'Ant Control', 'svc4.desc': 'Elimination of ant colonies inside and outside buildings using safe and effective gel bait without disrupting daily activities.',
+    'svc5.title': 'Mosquito Control', 'svc5.desc': 'Fogging and residual spray to suppress mosquito populations and prevent the spread of dengue and malaria in your environment.',
+    'svc6.title': 'Fly Control', 'svc6.desc': 'Integrated fly control using sanitation methods, electric traps, and targeted insecticide application for kitchens and industrial areas.',
+    'svc7.title': 'Cockroach Control', 'svc7.desc': 'Gel bait and residual spray application for thorough elimination of cockroaches in kitchens, bathrooms, and hidden areas.',
+    'q.label': 'Our Advantages', 'q.title': 'Uncompromising Protection Standards',
+    'q1.title': 'Safe Methods', 'q1.desc': 'We only use officially registered chemicals that are safe for the environment and home occupants.',
+    'q2.title': 'Expert Technicians', 'q2.desc': 'Field teams trained regularly with BNSP certification for professional pest management.',
+    'q3.title': 'Guaranteed Results', 'q3.desc': "Every job comes with a detailed report and routine monitoring guarantee to ensure pests don't return.",
+    'ct.label': 'Contact Us', 'ct.title': 'Ready to Protect Your Valuable Assets',
+    'ct.office': 'Main Office Tabanan', 'ct.addr': 'Jl. Tukad Yeh Empas No 13, Br. Anyar Kediri Tabanan Bali',
+    'ct.hotline': 'Hotline 24/7', 'ct.hotline.info': '0800-1-PESTONE (Toll Free)<br/>+62 21 555 9876',
+    'ct.email': 'Email Support',
+    'form.name': 'Full Name', 'form.phone': 'Phone Number',
+    'form.service': 'Service Type', 'form.msg': 'Message / Address',
+    'form.ph.name': 'John Doe', 'form.ph.msg': 'Describe your pest problem...',
+    'form.opt0': 'Select Service', 'form.opt1': 'Termite Control',
+    'form.opt2': 'Rodent Control', 'form.opt3': 'General Pest Control',
+    'form.opt4': 'Ant Control', 'form.opt5': 'Mosquito Control',
+    'form.opt6': 'Fly Control', 'form.opt7': 'Cockroach Control',
+    'form.submit': 'Send Consultation Request',
+  }
+};
+</script>
+<script src="i18n.js"></script>
 </body></html>
